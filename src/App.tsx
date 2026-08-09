@@ -4,15 +4,15 @@ import { PaxlovidChecker } from './components/PaxlovidChecker';
 import wuLogo from './assets/wu_ent_logo.jpg';
 import './App.css';
 
-// Eye-friendly clinical slate-teal dark theme
+// Eye-friendly clinical forest-teal dark theme (Parent-Child Clinic Soft Night)
 const clinicalDarkTheme = {
   ...webDarkTheme,
-  colorNeutralBackground1: "#0f172a", // Slate 900
-  colorNeutralBackground2: "#1e293b", // Slate 800
-  colorNeutralBackground3: "#0f172a", 
-  colorNeutralBackground4: "#020617", // Slate 950
-  colorNeutralBackground5: "#0f172a",
-  colorNeutralBackground6: "#1e293b",
+  colorNeutralBackground1: "#0d1f1b", // Deep forest slate-green
+  colorNeutralBackground2: "#152e29", // Medium forest slate-green
+  colorNeutralBackground3: "#0d1f1b", 
+  colorNeutralBackground4: "#071311", // Deepest forest green
+  colorNeutralBackground5: "#0d1f1b",
+  colorNeutralBackground6: "#152e29",
   
   colorBrandBackground: "#0d9488", // Teal 600
   colorBrandBackgroundHover: "#0f766e", // Teal 700
@@ -27,33 +27,60 @@ const clinicalDarkTheme = {
   colorBrandForegroundLinkSelected: "#2dd4bf",
 
   colorBrandStroke1: "#0d9488",
-  colorBrandStroke2: "#14b8a6", // Teal 500
-};
-
-// Eye-friendly clinical slate-teal light theme
-const clinicalLightTheme = {
-  ...webLightTheme,
-  colorNeutralBackground1: "#f8fafc", // Slate 50
-  colorNeutralBackground2: "#f1f5f9", // Slate 100
-  colorNeutralBackground3: "#e2e8f0", // Slate 200
-  colorNeutralBackground4: "#cbd5e1",
-  
-  colorBrandBackground: "#0f766e", 
-  colorBrandBackgroundHover: "#115e59", 
-  colorBrandBackgroundPressed: "#134e4a", 
-  colorBrandBackgroundSelected: "#0f766e",
-  
-  colorBrandForeground1: "#0f766e",
-  colorBrandForeground2: "#115e59",
-  colorBrandForegroundLink: "#0f766e",
-  colorBrandForegroundLinkHover: "#115e59",
-
-  colorBrandStroke1: "#0f766e",
   colorBrandStroke2: "#14b8a6",
 };
 
+// Eye-friendly clinical forest-teal light theme (Parent-Child Soft Mint)
+const clinicalLightTheme = {
+  ...webLightTheme,
+  colorNeutralBackground1: "#f2f8f6", // Soft mint cream
+  colorNeutralBackground2: "#e6f2ed", // Mint green light card background
+  colorNeutralBackground3: "#dbece5", // Slightly darker mint separator
+  colorNeutralBackground4: "#cce2d8",
+  
+  colorBrandBackground: "#0d9488", 
+  colorBrandBackgroundHover: "#0f766e", 
+  colorBrandBackgroundPressed: "#115e59", 
+  colorBrandBackgroundSelected: "#0d9488",
+  
+  colorBrandForeground1: "#0d9488",
+  colorBrandForeground2: "#0f766e",
+  colorBrandForegroundLink: "#0d9488",
+  colorBrandForegroundLinkHover: "#0f766e",
+
+  colorBrandStroke1: "#0d9488",
+  colorBrandStroke2: "#14b8a6",
+};
+
+// Eye-friendly clinical sepia/book-paper theme (🍵 Warm Sepia/Cream)
+const clinicalEyecareTheme = {
+  ...webLightTheme,
+  colorNeutralBackground1: "#eadabe", // Antique book paper background (zero blue-light glare)
+  colorNeutralBackground2: "#e4d4b2", // Slightly deeper card background
+  colorNeutralBackground3: "#dccb9f", 
+  colorNeutralBackground4: "#d2c193",
+  
+  colorNeutralForeground1: "#2e2518", // Soothing warm deep-charcoal-brown instead of harsh black
+  colorNeutralForeground2: "#453825",
+  colorNeutralForeground3: "#5e4e37",
+  colorNeutralForeground4: "#7c6a51",
+  
+  colorBrandBackground: "#b25e1a", // Warm amber/orange
+  colorBrandBackgroundHover: "#9a4f12", 
+  colorBrandBackgroundPressed: "#84420c", 
+  colorBrandBackgroundSelected: "#b25e1a",
+  
+  colorBrandForeground1: "#b25e1a",
+  colorBrandForeground2: "#9a4f12",
+  colorBrandForegroundLink: "#b25e1a",
+  colorBrandForegroundLinkHover: "#9a4f12",
+
+  colorBrandStroke1: "#b25e1a",
+  colorBrandStroke2: "#c67530",
+};
+
 export const App: React.FC = () => {
-  const [themeMode, setThemeMode] = useState<'light' | 'dark' | 'eyecare'>('dark'); // Default to dark like BEER
+  const [themeMode, setThemeMode] = useState<'light' | 'dark' | 'eyecare'>('eyecare'); // Default to eyecare for warm child-friendly clinic environment
 
   // Sync theme class to body for custom CSS styles
   useEffect(() => {
@@ -63,7 +90,7 @@ export const App: React.FC = () => {
 
   const getFluentTheme = () => {
     if (themeMode === 'dark') return clinicalDarkTheme;
-    // For eyecare we use light theme controls but with customized warm backgrounds in CSS
+    if (themeMode === 'eyecare') return clinicalEyecareTheme;
     return clinicalLightTheme;
   };
 
