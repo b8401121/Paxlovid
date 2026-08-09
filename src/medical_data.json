@@ -1,0 +1,3185 @@
+{
+  "drug_stability": [
+    {
+      "name": "Alprostadil (Prostin VR) 500mcg/mL/Amp",
+      "storage": "冷藏 2-8°C",
+      "stability": "開瓶即棄；室溫: 24 hrs",
+      "prep": "1 Amp + NS 25-250mL (如加至250mL, 濃度為 2 mcg/mL)",
+      "bolus": "--",
+      "rate": "0.01-0.4 mcg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 0.5,
+        "vol": 250,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Dobutamine (Gendobu) 250mg/20mL/Vial",
+      "storage": "室溫",
+      "stability": "室溫: 24 hrs",
+      "prep": "2 Vial (500mg) + NS/D5W 500mL (1mg/mL)",
+      "bolus": "--",
+      "rate": "2-20 μg/kg/min (max 40)",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 500,
+        "vol": 500,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Dopamine (Dopamin) 200mg/5mL/Amp",
+      "storage": "室溫 避光",
+      "stability": "開瓶即棄；室溫: 24 hrs",
+      "prep": "4 Amp (800mg) + NS 500mL (1.6mg/mL)",
+      "bolus": "--",
+      "rate": "2-20 μg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 800,
+        "vol": 500,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Epinephrine (Adrenalin) 1mg/mL/Amp",
+      "storage": "室溫 避光",
+      "stability": "開瓶即棄 (丟棄)",
+      "prep": "5 Amp (5mg) + NS 500mL (10μg/mL)",
+      "bolus": "--",
+      "rate": "0.01-0.1 mcg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 5,
+        "vol": 500,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Heparin (Agglutex) 25000U/5mL",
+      "storage": "室溫 避光",
+      "stability": "開封冷藏1個月",
+      "prep": "20000 U + NS 500mL (40U/mL)",
+      "bolus": "1mL/kg (Max 125mL)",
+      "rate": "12-20 U/kg/h",
+      "calc": {
+        "unit": "U/kg/hr",
+        "amt": 20000,
+        "vol": 500,
+        "factor": 1,
+        "type": "U"
+      }
+    },
+    {
+      "name": "Norepinephrine 4mg/4mL",
+      "storage": "室溫 避光",
+      "stability": "室溫 24 hrs",
+      "prep": "2 Vial (8mg) + D5W 500mL (16μg/mL)",
+      "bolus": "--",
+      "rate": "0.01-0.1 mcg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 8,
+        "vol": 500,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "NTG (Glyceryl trinitrate) 50mg/10mL",
+      "storage": "室溫 避光",
+      "stability": "開瓶即棄；室溫 24 hrs",
+      "prep": "1 Amp (50mg) + D5W 490mL (100μg/mL) = 500mL",
+      "bolus": "--",
+      "rate": "5-100 mcg/min",
+      "calc": {
+        "unit": "mcg/min (不計體重)",
+        "amt": 50,
+        "vol": 500,
+        "factor": 60,
+        "type": "mcg_fixed"
+      }
+    },
+    {
+      "name": "Atracurium (Genso) 25mg/2.5mL/Amp",
+      "storage": "冷藏避光",
+      "stability": "開瓶即棄",
+      "prep": "8 Amp (200mg) +NS 80mL (2mg/mL)",
+      "bolus": "0.4-0.5 mg/kg",
+      "rate": "0.3-0.6 mg/kg/hr",
+      "calc": {
+        "unit": "mg/kg/hr",
+        "amt": 200,
+        "vol": 100,
+        "factor": 1,
+        "type": "mg"
+      }
+    },
+    {
+      "name": "Dexmedetomidine (Precedex) 200mcg/2mL",
+      "storage": "室溫",
+      "stability": "開瓶即棄",
+      "prep": "1 vial (200mcg=0.2mg) + 48 mL N/S",
+      "bolus": "0.5-1 μg/kg",
+      "rate": "0.2-1 μg/kg/h",
+      "calc": {
+        "unit": "mcg/kg/hr",
+        "amt": 0.2,
+        "vol": 50,
+        "factor": 1,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Esmolol 100mg/10mL/Vial",
+      "storage": "室溫",
+      "stability": "7 days",
+      "prep": "Undiluted (10mg/mL)",
+      "bolus": "0.05mL/kg",
+      "rate": "0.05-0.3 mg/kg/min",
+      "calc": {
+        "unit": "mg/kg/min",
+        "amt": 100,
+        "vol": 10,
+        "factor": 60,
+        "type": "mg"
+      }
+    },
+    {
+      "name": "Fentanyl 0.5mg/10mL/Amp",
+      "storage": "室溫避光",
+      "stability": "24 hrs",
+      "prep": "1 Amp (0.5mg) + NS 40 mL (10μg/mL)",
+      "bolus": "1mL/5mL",
+      "rate": "0.5-2 μg/kg/hr",
+      "calc": {
+        "unit": "mcg/kg/hr",
+        "amt": 0.5,
+        "vol": 50,
+        "factor": 1,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Isoproterenol (Proternol-L) 0.2mg/mL",
+      "storage": "室溫 避光",
+      "stability": "24 hrs",
+      "prep": "10Amp (2mg) + D5W 500mL (4μg/mL)",
+      "bolus": "--",
+      "rate": "0.01-0.1 mcg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 2,
+        "vol": 500,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Milrinone (Primacor) 10mg/10mL",
+      "storage": "室溫",
+      "stability": "3天",
+      "prep": "1Amp (10mg) + NS 40mL (0.2mg/mL)",
+      "bolus": "50μg/kg",
+      "rate": "0.375-0.75μg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 10,
+        "vol": 50,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Nicardipine (Nicarpine) 10mg/10mL",
+      "storage": "室溫 避光",
+      "stability": "24 hrs",
+      "prep": "2Amp (20mg) + NS 20mL (0.5mg/mL)",
+      "bolus": "--",
+      "rate": "0.5-5 mcg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 20,
+        "vol": 40,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Propofol (Fresofol/Lipuro) 200mg/20mL",
+      "storage": "室溫",
+      "stability": "6h",
+      "prep": "Undiluted (10mg/mL)",
+      "bolus": "0.25-1mg/kg",
+      "rate": "0.3-3mg/kg/hr",
+      "calc": {
+        "unit": "mg/kg/hr",
+        "amt": 200,
+        "vol": 20,
+        "factor": 1,
+        "type": "mg"
+      }
+    },
+    {
+      "name": "Vasopressin (Pitressin) 20U/mL",
+      "storage": "室溫",
+      "stability": "Unknown",
+      "prep": "Shock: 1Amp (20U) + D5W 25mL",
+      "bolus": "VT/VF: 2 Amp",
+      "rate": "0.01-0.04 U/min",
+      "calc": {
+        "unit": "U/min (不計體重)",
+        "amt": 20,
+        "vol": 25,
+        "factor": 60,
+        "type": "U_fixed"
+      }
+    },
+    {
+      "name": "Atropine 1mg/mL/Amp",
+      "storage": "室溫 避光",
+      "stability": "Unknown",
+      "prep": "25 Amp + NS 250mL (0.1mg/mL)",
+      "bolus": "0.5-1 mg",
+      "rate": "5-10mL/hr",
+      "calc": {
+        "unit": "mg/hr",
+        "amt": 25,
+        "vol": 250,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Cacium chloride (Vitacal) 20mL/Amp",
+      "storage": "室溫",
+      "stability": "開瓶即棄",
+      "prep": "1. 5 Amp in 500mL",
+      "bolus": "1-3 Amp over 5-10 min",
+      "rate": "1. Over 24h",
+      "calc": false
+    },
+    {
+      "name": "Diazepam (Valium) 10mg/2mL/Amp",
+      "storage": "室溫",
+      "stability": "室溫: 24 hrs",
+      "prep": "IVD: 1amp +NS 500mL",
+      "bolus": "--",
+      "rate": "15-50mL/hr",
+      "calc": {
+        "unit": "mg/hr",
+        "amt": 10,
+        "vol": 500,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Furosemide (Rasitol) 20mg/2mL",
+      "storage": "室溫 避光",
+      "stability": "開瓶即棄；室溫: 24 hrs",
+      "prep": "Undiluted",
+      "bolus": "1-4 amp over 1-2min",
+      "rate": "<24mL/hr",
+      "calc": null
+    },
+    {
+      "name": "Methylprednisolone (Solu-medrol)",
+      "storage": "室溫 避光",
+      "stability": "室溫: 48 hrs",
+      "prep": "40mg+1mL SW",
+      "bolus": "--",
+      "rate": "<250mg: 5m",
+      "calc": false
+    },
+    {
+      "name": "MgSO4 (2gm/20mL/Amp)",
+      "storage": "室溫",
+      "stability": "開瓶即棄；室溫 24 hrs",
+      "prep": "5 Amp (10g) + D5W 500mL (20mg/mL)",
+      "bolus": "1Amp over 2min",
+      "rate": "40mL/hr",
+      "calc": {
+        "unit": "g/hr",
+        "amt": 10,
+        "vol": 500,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Midazolam (Dormicum) 5mg/mL",
+      "storage": "室溫",
+      "stability": "開瓶即棄；室溫 24h",
+      "prep": "10Amp (50mg) + NS 40mL (1mg/mL)",
+      "bolus": "0.05mg/kg",
+      "rate": "1.5-15 mL/hr",
+      "calc": {
+        "unit": "mg/kg/hr",
+        "amt": 50,
+        "vol": 50,
+        "type": "mg"
+      }
+    },
+    {
+      "name": "Nimodipine (Nimotop) 10mg/50mL",
+      "storage": "室溫 避光",
+      "stability": "Undiluted; 避光安定10 hrs",
+      "prep": "Undiluted (0.2mg/ml)",
+      "bolus": "--",
+      "rate": "15μg/kg/h",
+      "calc": {
+        "unit": "mcg/kg/hr",
+        "amt": 10,
+        "vol": 50,
+        "type": "mcg_kg_hr"
+      }
+    },
+    {
+      "name": "Octreotide (Sandostatin) 0.1mg/mL",
+      "storage": "冷藏 (室溫2週)",
+      "stability": "開瓶即棄；室溫 24 hrs",
+      "prep": "6 Amp (0.6mg) + NS 500mL",
+      "bolus": "--",
+      "rate": "5-40 mL/hr",
+      "calc": {
+        "unit": "mcg/hr",
+        "amt": 600,
+        "vol": 500,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Omeprazole (Losec) 40mg/Vial",
+      "storage": "室溫 避光",
+      "stability": "12h in NS, 6h in D5W",
+      "prep": "1vial + NS 100mL (0.4mg/mL)",
+      "bolus": "Over 20-30m",
+      "rate": "20mL/hr",
+      "calc": {
+        "unit": "mg/hr",
+        "amt": 40,
+        "vol": 100,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Pantoprazole (Pantoloc) 40mg/Vial",
+      "storage": "室溫",
+      "stability": "室溫 24 hrs",
+      "prep": "IVP: 1vial+10mL",
+      "bolus": "IVP over 2min",
+      "rate": "20mL/hr",
+      "calc": false
+    },
+    {
+      "name": "Phenobarbital 100mg/mL",
+      "storage": "室溫 避光",
+      "stability": "丟棄",
+      "prep": "10Amp (1000mg) + NS 40mL (20mg/mL)",
+      "bolus": "40mL > 20min",
+      "rate": "Over 20min",
+      "calc": false
+    },
+    {
+      "name": "Phenytoin (Aleviatin) 250mg/5mL",
+      "storage": "室溫",
+      "stability": "室溫 24 hrs",
+      "prep": "IV bolus: Undiluted",
+      "bolus": "0.3-0.4mL/kg/day",
+      "rate": "Over 20min",
+      "calc": null
+    },
+    {
+      "name": "Pralidoxime (PAM) 500mg/20mL",
+      "storage": "室溫",
+      "stability": "Unknown",
+      "prep": "Undiluted (25mg/mL)",
+      "bolus": "2-4 amp for 10-30m",
+      "rate": "20mL/hr",
+      "calc": null
+    },
+    {
+      "name": "Somatostatin (Somatosan) 3mg/Amp",
+      "storage": "室溫",
+      "stability": "室溫 8 hrs",
+      "prep": "Somatostatin 3mg x 2 支 (6mg) + NS 500 mL\n• Phase 1: 前 20 mL，以 full run 速度快速滴注（相當於 slow IV bolus）\n• Phase 2: 剩餘 480 mL，以 20 mL/hr 速度持續輸注（連續 24 小時）",
+      "bolus": "前 20 mL full run (slow bolus)",
+      "rate": "Phase 2: 20 mL/hr x 24 hr",
+      "calc": false
+    },
+    {
+      "name": "Adenosine (6mg/2ml/amp)",
+      "storage": "Unknown",
+      "stability": "Unknown",
+      "prep": "Do not dilute",
+      "bolus": "6 mg IV push over 2-3 sec",
+      "rate": "--",
+      "calc": false
+    },
+    {
+      "name": "Amiodarone (Cordarone) 150mg/3ml/amp",
+      "storage": "Unknown",
+      "stability": "僅可用D5W稀釋",
+      "prep": "Step1: 3ml(150mg) + D5W 100ml\nStep2: 6A(900mg) + D5W 500ml",
+      "bolus": "150mg IV bolus",
+      "rate": "33ml/hr x 6h, then 17ml/hr x 18h",
+      "calc": false
+    },
+    {
+      "name": "Digoxin (250ug/1ml/amp)",
+      "storage": "Unknown",
+      "stability": "Unknown",
+      "prep": "1 amp slow push or dilute with NS 10ml",
+      "bolus": "0.4 - 0.6 mg",
+      "rate": "0.075 - 0.35 mg/day",
+      "calc": false
+    },
+    {
+      "name": "Diltiazem (Herbesser) 10mg/amp",
+      "storage": "Unknown",
+      "stability": "Unknown",
+      "prep": "Bolus: 1 vial + NS 5ml\nInfusion: 10 vial + NS 100ml",
+      "bolus": "0.25mg/kg or 20 mg over 2 min",
+      "rate": "10 - 15 mg/hr",
+      "calc": {
+        "unit": "mg/hr (不計體重)",
+        "amt": 100,
+        "vol": 100,
+        "factor": 1,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Isosorbide dinitrate (Isoket) 10mg/10ml/amp",
+      "storage": "Unknown",
+      "stability": "Unknown",
+      "prep": "2 amp + D5W 80ml (0.2mg/ml)",
+      "bolus": "--",
+      "rate": "2-10 mg/hr",
+      "calc": {
+        "unit": "mg/hr (不計體重)",
+        "amt": 20,
+        "vol": 100,
+        "factor": 1,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Labetalol (Trandate) 25mg/5ml/amp",
+      "storage": "Unknown",
+      "stability": "稀釋後可保存24小時",
+      "prep": "8amp(200mg) + D5W/NS 160ml (1mg/ml)",
+      "bolus": "50 mg IV push",
+      "rate": "15-160 mg/hr",
+      "calc": {
+        "unit": "mg/hr (不計體重)",
+        "amt": 200,
+        "vol": 200,
+        "factor": 1,
+        "type": "mg_fixed"
+      }
+    },
+    {
+      "name": "Lidocaine (Xylocaine) 100mg/5ml/amp",
+      "storage": "Unknown",
+      "stability": "Unknown",
+      "prep": "5 amp(500mg) + D5W 75ml (5mg/ml)",
+      "bolus": "5-10 mg IV push",
+      "rate": "1 mg/min",
+      "calc": {
+        "unit": "mg/min (不計體重)",
+        "amt": 500,
+        "vol": 100,
+        "factor": 60,
+        "type": "mg_min_fixed"
+      }
+    },
+    {
+      "name": "Nitroprusside (Nipride) 50mg/vial",
+      "storage": "避光",
+      "stability": "Unknown",
+      "prep": "1 vial + D5W 250ml (0.2mg/ml)",
+      "bolus": "--",
+      "rate": "0.3-10 mcg/kg/min",
+      "calc": {
+        "unit": "mcg/kg/min",
+        "amt": 50,
+        "vol": 250,
+        "factor": 60,
+        "type": "mcg"
+      }
+    },
+    {
+      "name": "Procainamide (Pronestyl) 1g/10ml/vial",
+      "storage": "Unknown",
+      "stability": "Unknown",
+      "prep": "2amp + D5W/NS 92ml",
+      "bolus": "--",
+      "rate": "0.5-30 ug/min (注意原網頁可能誤植)",
+      "calc": false
+    }
+  ],
+  "pd_abx_cont": [
+    "Vancomycin",
+    "Cefazolin",
+    "Ceftazidime",
+    "Ceftriaxone",
+    "Cefepime",
+    "Cefotaxime",
+    "Cefoperazone",
+    "Imipenem-cilastatin",
+    "Meropenem",
+    "Amoxicillin",
+    "Ampicillin",
+    "Ampicillin-sulbactam",
+    "Penicillin G",
+    "Teicoplanin",
+    "Aztreonam",
+    "Ciprofloxacin",
+    "Clindamycin",
+    "Daptomycin",
+    "Ofloxacin",
+    "Polymyxin B",
+    "Aminoglycosides"
+  ],
+  "pd_abx_int": [
+    "Vancomycin",
+    "Cefazolin",
+    "Ceftazidime",
+    "Ceftriaxone",
+    "Gentamicin",
+    "Amikacin",
+    "Tobramycin",
+    "Netilmicin",
+    "Imipenem-cilastatin",
+    "Meropenem",
+    "Cefepime",
+    "Cefotaxime",
+    "Teicoplanin",
+    "Ampicillin",
+    "Aztreonam",
+    "Ciprofloxacin (Oral)",
+    "Daptomycin",
+    "Fosfomycin"
+  ],
+  "abx_guide": [
+    {
+      "name": "Acyclovir (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 50,
+          "dose": "5-10 mg/kg q8h"
+        },
+        {
+          "min": 25,
+          "max": 49,
+          "dose": "5-10 mg/kg q12h"
+        },
+        {
+          "min": 10,
+          "max": 24,
+          "dose": "5-10 mg/kg q24h"
+        },
+        {
+          "max": 9,
+          "dose": "2.5-5 mg/kg q24h"
+        }
+      ],
+      "notes": "肥胖調整: BMI ≥ 30 時，建議使用 AdjBW 或 IBW。"
+    },
+    {
+      "name": "Amikacin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 60,
+          "dose": "15 mg/kg q24h"
+        },
+        {
+          "min": 40,
+          "max": 59,
+          "dose": "15 mg/kg q36h"
+        },
+        {
+          "min": 20,
+          "max": 39,
+          "dose": "15 mg/kg q48h"
+        },
+        {
+          "max": 19,
+          "dose": "建議諮詢藥師 (TDM)。"
+        }
+      ],
+      "notes": "建議使用 TDM 監測。"
+    },
+    {
+      "name": "Amoxicillin/Clavulanate (Augmentin) (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 31,
+          "dose": "1.2 g q8h (Standard)"
+        },
+        {
+          "min": 10,
+          "max": 30,
+          "dose": "首劑 1.2 g，隨後 600 mg q12h"
+        },
+        {
+          "max": 10,
+          "dose": "首劑 1.2 g，隨後 600 mg q24h"
+        }
+      ],
+      "notes": "血液透析 (HD): 透析期間與結束時各額外補給 600 mg。"
+    },
+    {
+      "name": "Ampicillin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 50,
+          "dose": "1-2 g q4-6h"
+        },
+        {
+          "min": 10,
+          "max": 49,
+          "dose": "1-2 g q6-12h"
+        },
+        {
+          "max": 10,
+          "dose": "1-2 g q12-24h"
+        }
+      ]
+    },
+    {
+      "name": "Ampicillin/Sulbactam (Unasyn) (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 30,
+          "dose": "1.5-3 g q6h"
+        },
+        {
+          "min": 15,
+          "max": 29,
+          "dose": "1.5-3 g q12h"
+        },
+        {
+          "max": 14,
+          "dose": "1.5-3 g q24h"
+        }
+      ]
+    },
+    {
+      "name": "Aztreonam (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 30,
+          "dose": "1-2 g q8h"
+        },
+        {
+          "min": 10,
+          "max": 29,
+          "dose": "首劑 1-2 g，隨後 50% 劑量 q8h"
+        },
+        {
+          "max": 10,
+          "dose": "首劑 1-2 g，隨後 25% 劑量 q8h"
+        }
+      ]
+    },
+    {
+      "name": "Caspofungin (IV)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "首劑 70mg，隨後 50mg qd。不必隨腎功調整。"
+        }
+      ],
+      "notes": "輕度肝損 (Child-Pugh 5-6): 不必調。中度肝損 (Child-Pugh 7-9): 維持量 35mg qd。"
+    },
+    {
+      "name": "Cefazolin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 35,
+          "dose": "1-2 g q8h"
+        },
+        {
+          "min": 11,
+          "max": 34,
+          "dose": "1-2 g q12h"
+        },
+        {
+          "max": 10,
+          "dose": "1-2 g q24h"
+        }
+      ]
+    },
+    {
+      "name": "Cefepime (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 60,
+          "dose": "1-2 g q8-12h"
+        },
+        {
+          "min": 30,
+          "max": 50,
+          "dose": "1-2 g q12h"
+        },
+        {
+          "min": 11,
+          "max": 29,
+          "dose": "1 g q24h"
+        },
+        {
+          "max": 10,
+          "dose": "0.5-1 g q24h"
+        }
+      ],
+      "notes": "1. 延長輸注 (EI): 2g q8h (輸注 4 小時)。\n2. PIRRT: 1g q8h (EI)。"
+    },
+    {
+      "name": "Cefixime (PO)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 60,
+          "dose": "400 mg q24h"
+        },
+        {
+          "min": 21,
+          "max": 59,
+          "dose": "300 mg q24h"
+        },
+        {
+          "max": 20,
+          "dose": "200 mg q24h"
+        }
+      ]
+    },
+    {
+      "name": "Cefotaxime (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 20,
+          "dose": "1-2 g q6-12h"
+        },
+        {
+          "max": 20,
+          "dose": "1-2 g q12-24h"
+        }
+      ]
+    },
+    {
+      "name": "Ceftazidime (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 51,
+          "dose": "1-2 g q8h"
+        },
+        {
+          "min": 31,
+          "max": 50,
+          "dose": "1-2 g q12h"
+        },
+        {
+          "min": 16,
+          "max": 30,
+          "dose": "1 g q24h"
+        },
+        {
+          "min": 6,
+          "max": 15,
+          "dose": "500 mg q24h"
+        },
+        {
+          "max": 5,
+          "dose": "500 mg q48h"
+        }
+      ]
+    },
+    {
+      "name": "Ceftriaxone (IV)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "1-2 g q24h (Standard)。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Cefuroxime (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 20,
+          "dose": "750 mg - 1.5 g q8h"
+        },
+        {
+          "min": 10,
+          "max": 19,
+          "dose": "750 mg - 1.5 g q12h"
+        },
+        {
+          "max": 10,
+          "dose": "750 mg - 1.5 g q24h"
+        }
+      ]
+    },
+    {
+      "name": "Ciprofloxacin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 30,
+          "dose": "400 mg q8-12h"
+        },
+        {
+          "max": 30,
+          "dose": "400 mg q18-24h"
+        }
+      ]
+    },
+    {
+      "name": "Colistin (CMS) (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 50,
+          "dose": "Loading 9 MUI, then 4.5 MUI q12h"
+        },
+        {
+          "min": 20,
+          "max": 49,
+          "dose": "Loading 9 MUI, then 3-4.5 MUI q24h"
+        },
+        {
+          "max": 19,
+          "dose": "Loading 9 MUI, then 2-3 MUI q48h"
+        }
+      ],
+      "notes": "建議依據臨床與 TDM 進行細部調整。"
+    },
+    {
+      "name": "Daptomycin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 30,
+          "dose": "4-12 mg/kg q24h"
+        },
+        {
+          "max": 30,
+          "dose": "4-12 mg/kg q48h"
+        }
+      ]
+    },
+    {
+      "name": "Doripenem (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 51,
+          "dose": "500 mg q8h (EI 1h or 4h)"
+        },
+        {
+          "min": 30,
+          "max": 50,
+          "dose": "250 mg q8h 或 500 mg q12h"
+        },
+        {
+          "max": 29,
+          "dose": "250 mg q12h"
+        }
+      ]
+    },
+    {
+      "name": "Ertapenem (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 31,
+          "dose": "1 g q24h"
+        },
+        {
+          "max": 30,
+          "dose": "500 mg q24h"
+        }
+      ]
+    },
+    {
+      "name": "Fluconazole (IV/PO)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 50,
+          "dose": "100-800 mg q24h"
+        },
+        {
+          "max": 50,
+          "dose": "首劑 100%，隨後 50% 劑量 q24h"
+        }
+      ]
+    },
+    {
+      "name": "Ganciclovir (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 70,
+          "dose": "5 mg/kg q12h"
+        },
+        {
+          "min": 50,
+          "max": 69,
+          "dose": "2.5 mg/kg q12h"
+        },
+        {
+          "min": 25,
+          "max": 49,
+          "dose": "2.5 mg/kg q24h"
+        },
+        {
+          "min": 10,
+          "max": 24,
+          "dose": "1.25 mg/kg q24h"
+        },
+        {
+          "max": 10,
+          "dose": "1.25 mg/kg 3 times/week"
+        }
+      ]
+    },
+    {
+      "name": "Gentamicin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 60,
+          "dose": "5-7 mg/kg q24h 或是 1-2 mg/kg q8h"
+        },
+        {
+          "max": 60,
+          "dose": "建議諮詢藥師 (TDM)。"
+        }
+      ],
+      "notes": "建議使用 TDM 監測。"
+    },
+    {
+      "name": "Imipenem/Cilastatin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 90,
+          "dose": "500 mg q6h"
+        },
+        {
+          "min": 40,
+          "max": 89,
+          "dose": "500 mg q8h"
+        },
+        {
+          "min": 20,
+          "max": 39,
+          "dose": "250-500 mg q12h"
+        },
+        {
+          "max": 19,
+          "dose": "125-250 mg q12h"
+        }
+      ]
+    },
+    {
+      "name": "Levofloxacin (IV/PO)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 50,
+          "dose": "500-750 mg q24h"
+        },
+        {
+          "min": 20,
+          "max": 49,
+          "dose": "首劑 500-750mg, 隨後 250-500mg q24h"
+        },
+        {
+          "max": 19,
+          "dose": "首劑 500-750mg, 隨後 250-500mg q48h"
+        }
+      ]
+    },
+    {
+      "name": "Linezolid (IV/PO)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "600 mg q12h (Standard)。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Meropenem (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 51,
+          "dose": "1 g q8h"
+        },
+        {
+          "min": 26,
+          "max": 50,
+          "dose": "1 g q12h"
+        },
+        {
+          "min": 10,
+          "max": 25,
+          "dose": "500 mg q12h"
+        },
+        {
+          "max": 9,
+          "dose": "500 mg q24h"
+        }
+      ]
+    },
+    {
+      "name": "Metronidazole (IV/PO)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "500 mg q8h (Standard)。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Micafungin (IV)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "100-150 mg q24h。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Moxifloxacin (IV/PO)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "400 mg q24h (Standard)。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Nystatin (PO)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "500,000 U q6h (Standard)。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Oxacillin (IV)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "1-2 g q4-6h。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Piperacillin/Tazo (IV) (Zosyn)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 41,
+          "dose": "3.375-4.5 g q6h"
+        },
+        {
+          "min": 20,
+          "max": 40,
+          "dose": "2.25-3.375 g q6h"
+        },
+        {
+          "max": 19,
+          "dose": "2.25 g q8h"
+        }
+      ]
+    },
+    {
+      "name": "Sulfamethoxazole/TMP (Baktar) (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 30,
+          "dose": "10-20 mg/kg q6-12h"
+        },
+        {
+          "min": 15,
+          "max": 29,
+          "dose": "5-10 mg/kg q12-24h"
+        },
+        {
+          "max": 15,
+          "dose": "與藥師討論或避免使用。"
+        }
+      ],
+      "notes": "劑量以 TMP 基質計算。"
+    },
+    {
+      "name": "Teicoplanin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 60,
+          "dose": "6-12 mg/kg q24h (Loading q12h x3-5劑)"
+        },
+        {
+          "min": 30,
+          "max": 59,
+          "dose": "Loading後, 給予維持量 q48h"
+        },
+        {
+          "max": 30,
+          "dose": "Loading後, 給予維持量 q72h"
+        }
+      ]
+    },
+    {
+      "name": "Tigecycline (IV)",
+      "no_adj": true,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "Loading 100mg, then 50mg q12h。不必隨腎功調整。"
+        }
+      ]
+    },
+    {
+      "name": "Vancomycin (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 0,
+          "dose": "請參考 Vancomycin 專屬劑量規範與血品濃度偵測 (TDM)。"
+        }
+      ]
+    },
+    {
+      "name": "Voriconazole (IV)",
+      "no_adj": false,
+      "rules": [
+        {
+          "min": 50,
+          "dose": "Loading 6 mg/kg q12h x2劑, then 4 mg/kg q12h"
+        },
+        {
+          "max": 50,
+          "dose": "建議改用 PO 給藥 (IV 賦形劑會蓄積)。"
+        }
+      ]
+    }
+  ],
+  "bacteria_sensitivity": {
+    "Gram-Positives": [
+      {
+        "bacteria": "Streptococci (S. pneumoniae, pyogenes)",
+        "antibiotics": [
+          "Amoxicillin",
+          "Amox/Clav",
+          "Pip/Tazo",
+          "Cefazolin",
+          "Cefuroxime",
+          "Ceftriaxone",
+          "Cefepime",
+          "Carbapenems",
+          "Vancomycin",
+          "Linezolid",
+          "Clindamycin",
+          "Levo/Moxifloxacin"
+        ]
+      },
+      {
+        "bacteria": "Enterococci (E. faecalis)",
+        "antibiotics": [
+          "Amoxicillin",
+          "Pip/Tazo",
+          "Vancomycin",
+          "Linezolid",
+          "Nitrofurantoin",
+          "Fosfomycin"
+        ]
+      },
+      {
+        "bacteria": "Staphylococci (MSSA)",
+        "antibiotics": [
+          "Cloxacillin",
+          "Amox/Clav",
+          "Pip/Tazo",
+          "Cefazolin",
+          "Cefuroxime",
+          "Ceftriaxone",
+          "Cefepime",
+          "Carbapenems",
+          "Vancomycin",
+          "Linezolid",
+          "Septra",
+          "Doxycycline"
+        ]
+      },
+      {
+        "bacteria": "Staphylococci (MRSA)",
+        "antibiotics": [
+          "Vancomycin",
+          "Linezolid",
+          "Septra",
+          "Doxycycline"
+        ]
+      }
+    ],
+    "Gram-Negatives": [
+      {
+        "bacteria": "H. influenzae / M. catarrhalis",
+        "antibiotics": [
+          "Amox/Clav",
+          "Pip/Tazo",
+          "Cefuroxime",
+          "Ceftriaxone",
+          "Cefepime",
+          "Carbapenems",
+          "Azithromycin",
+          "Fluoroquinolones"
+        ]
+      },
+      {
+        "bacteria": "Enterobacteriaceae (E. coli, Klebsiella, Proteus)",
+        "antibiotics": [
+          "Amox/Clav",
+          "Pip/Tazo",
+          "Ceftriaxone",
+          "Cefepime",
+          "Carbapenems",
+          "Fluoroquinolones",
+          "Aminoglycosides",
+          "Nitrofurantoin",
+          "Fosfomycin",
+          "Septra"
+        ]
+      },
+      {
+        "bacteria": "Pseudomonas aeruginosa",
+        "antibiotics": [
+          "Pip/Tazo",
+          "Ceftazidime",
+          "Cefepime",
+          "Meropenem",
+          "Ciprofloxacin",
+          "Levofloxacin",
+          "Gentamicin",
+          "Tobramycin"
+        ]
+      },
+      {
+        "bacteria": "ESBL producers",
+        "antibiotics": [
+          "Meropenem",
+          "Ertapenem",
+          "Fosfomycin",
+          "Nitrofurantoin (UTI only)"
+        ]
+      },
+      {
+        "bacteria": "SPACE organisms (Serratia, Pseudomonas, Acinetobacter, Citrobacter, Enterobacter)",
+        "antibiotics": [
+          "Pip/Tazo",
+          "Cefepime",
+          "Carbapenems",
+          "Fluoroquinolones",
+          "Aminoglycosides"
+        ]
+      }
+    ],
+    "Anaerobes": [
+      {
+        "bacteria": "Above Diaphragm (Peptostreptococcus)",
+        "antibiotics": [
+          "Amoxicillin",
+          "Amox/Clav",
+          "Pip/Tazo",
+          "Clindamycin",
+          "Carbapenems",
+          "Metronidazole",
+          "Moxifloxacin"
+        ]
+      },
+      {
+        "bacteria": "Below Diaphragm (B. fragilis)",
+        "antibiotics": [
+          "Amox/Clav",
+          "Pip/Tazo",
+          "Carbapenems",
+          "Metronidazole"
+        ]
+      }
+    ],
+    "Atypicals": [
+      {
+        "bacteria": "Atypicals (Mycoplasma, Chlamydia, Legionella)",
+        "antibiotics": [
+          "Azithromycin",
+          "Clarithromycin",
+          "Levofloxacin",
+          "Moxifloxacin",
+          "Doxycycline"
+        ]
+      }
+    ]
+  },
+  "paxlovid_interactions": [
+    {
+      "text": "泌尿/BPH Xatral XL * tab 10 mg (Alfuzosin) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少alfuzosin代謝，使升高 alfuzosin血中濃度而引發低血壓。 絕對不可併用。",
+      "generic": "Alfuzosin",
+      "brand": "Xatral"
+    },
+    {
+      "text": "泌尿/BPH Viagra FC * tab 100 mg (Sildenafil) 重度 快速 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少sildenafil代謝，使升高 sildenafil血中濃度，引發嚴重低血壓、視力障礙等。 儘量避免併用，若需併用則sildenafil在48小時內用量不可超過25 mg，並需觀察 是否出現sildenafil副作用。",
+      "generic": "Sildenafil",
+      "brand": "Viagra"
+    },
+    {
+      "text": "泌尿/BPH Viagra OD * tab 50 mg (Sildenafil) 重度 快速 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少sildenafil代謝，使升高 sildenafil血中濃度，引發嚴重低血壓、視力障礙等。 儘量避免併用，若需併用則sildenafil在48小時內用量不可超過25 mg，並需觀察 是否出現sildenafil副作用。",
+      "generic": "Sildenafil",
+      "brand": "Viagra"
+    },
+    {
+      "text": "泌尿/BPH Erleada FC tab 60 mg (Apalutamide) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A4使升高apalutamide血中濃度及副作用； apalutamide誘導CYP3A4使降低nirmatrelvir/ritonavir療效而產生 抗藥性。 絕對不可併用。",
+      "generic": "Apalutamide",
+      "brand": "Erleada"
+    },
+    {
+      "text": "泌尿/BPH Urief FC * tab 4 mg (Silodosin) 絕對不可併用 不明 可 Ritonavir抑制CYP3A4而減少silodosin代謝，使升高silodosin血中 濃度及副作用。 絕對不可併用。",
+      "generic": "Silodosin",
+      "brand": "Urief"
+    },
+    {
+      "text": "泌尿/BPH Urief FC * tab 8 mg (Silodosin) 絕對不可併用 不明 可 Ritonavir抑制CYP3A4而減少silodosin代謝，使升高silodosin血中 濃度及副作用。 絕對不可併用。",
+      "generic": "Silodosin",
+      "brand": "Urief"
+    },
+    {
+      "text": "CV/肺動脈高壓 Revatio FC * tab 20 mg (Sildenafil) 絕對不可併用 快速 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少sildenafil代謝，使升高 sildenafil血中濃度，引發嚴重低血壓、視力障礙等。 絕對不可併用於肺動脈高壓病人。",
+      "generic": "Sildenafil",
+      "brand": "Revatio"
+    },
+    {
+      "text": "CV/肺動脈高壓 Revatio 0.1 * tab (2 mg/pk)(Sildenafil) 絕對不可併用 快速 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少sildenafil代謝，使升高 sildenafil血中濃度，引發嚴重低血壓、視力障礙等。 絕對不可併用於肺動脈高壓病人。",
+      "generic": "2 mg/pk",
+      "brand": "Revatio"
+    },
+    {
+      "text": "CV/肺動脈高壓 Tracleer (CHD) FC * tab 125 mg (Bosentan) 重度 緩慢 可 Ritonavir抑制CYP3A4和OATP，與nirmatrelvir均會減少bosentan 代謝，使增加bosentan血中濃度及副作用。 若已使用bosentan，建議停用bosentan至少36小時後再開始使用Paxlovid。",
+      "generic": "CHD",
+      "brand": "Tracleer"
+    },
+    {
+      "text": "CV/肺動脈高壓 Adempas FC * tab 2 mg (Riociguat) 重度 不明 尚可 Ritonavir抑制CYP3A4、P-glycoprotein及BCRP而減少riociguat 代謝，使升高riociguat血中濃度及副作用。 儘量避免併用，若需併用則riociguat建議起始劑量為0.5 mg tid並應密切監測低 血壓症狀。",
+      "generic": "Riociguat",
+      "brand": "Adempas"
+    },
+    {
+      "text": "CV/肺動脈高壓 ADEMPAS FC * tab 2.5 mg 重度 不明 尚可 Ritonavir抑制CYP3A4、P-glycoprotein及BCRP而減少riociguat 儘量避免併用，若需併用則riociguat建議起始劑量為0.5 mg tid並應密切監測低",
+      "generic": "",
+      "brand": "ADEMPAS"
+    },
+    {
+      "text": "疼痛 Pethidine #> inj 50 mg/ml 1 ml (Meperidine, Demerol) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少meperidine代謝，使升 高meperidine血中濃度，引發副作用如呼吸抑制、血液毒性等。 絕對不可併用。",
+      "generic": "Meperidine, Demerol",
+      "brand": "Pethidine"
+    },
+    {
+      "text": "疼痛 Pethidine #> tab 50 mg (Meperidine, Demerol) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少meperidine代謝，使升 高meperidine血中濃度，引發副作用如呼吸抑制、血液毒性等。 絕對不可併用。",
+      "generic": "Meperidine, Demerol",
+      "brand": "Pethidine"
+    },
+    {
+      "text": "疼痛 Xylocaine iv # inj 2% 5 ml (Lidocaine) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少lidocaine代謝，使增加 lidocaine血中濃度，增加副作用 (如心律不整、低血壓等) 發生之 風險。 應謹慎併用並密切觀察病人臨床反應及副作用。",
+      "generic": "Lidocaine",
+      "brand": "Xylocaine"
+    },
+    {
+      "text": "疼痛 Fentanyl \"PPCD\" #>* inj 0.1 mg/2 ml (Fentanyl) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少fentanyl代謝，使升高 fentanyl療效及毒性副作用如呼吸抑制等。 併用時應密切觀察病人臨床反應，必要時調降fentanyl劑量。",
+      "generic": "Fentanyl",
+      "brand": "Fentanyl"
+    },
+    {
+      "text": "疼痛 Fentanyl \"PPCD\" Trans patch #>* 25 ug/hr (Fentanyl 2.5 mg) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少fentanyl代謝，使升高 fentanyl療效及毒性副作用如呼吸抑制等。 併用時應密切觀察病人臨床反應，必要時調降fentanyl劑量。",
+      "generic": "Fentanyl 2.5 mg",
+      "brand": "Fentanyl"
+    },
+    {
+      "text": "疼痛 Fentanyl \"PPCD\" Trans patch #>* 50 ug/hr (Fentanyl 5 mg) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少fentanyl代謝，使升高 fentanyl療效及毒性副作用如呼吸抑制等。 併用時應密切觀察病人臨床反應，必要時調降fentanyl劑量。",
+      "generic": "Fentanyl 5 mg",
+      "brand": "Fentanyl"
+    },
+    {
+      "text": "疼痛 Durogesic D-Trans patch #>* 12 ug/hr (Fentanyl 2.1 mg) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少fentanyl代謝，使升高 fentanyl療效及毒性副作用如呼吸抑制等。 併用時應密切觀察病人臨床反應，必要時調降fentanyl劑量。",
+      "generic": "Fentanyl 2.1 mg",
+      "brand": "Durogesic"
+    },
+    {
+      "text": "疼痛 Painkyl buccal soluble #> films 200mcg (Fentanyl 0.31mg/unit 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少fentanyl代謝，使升高 fentanyl療效及毒性副作用如呼吸抑制等。 併用時應密切觀察病人臨床反應，必要時調降fentanyl劑量。",
+      "generic": "",
+      "brand": "Painkyl"
+    },
+    {
+      "text": "疼痛 Opiodur trans #>* patch 12 ug/hr (Fentanyl 1.375 mg) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少fentanyl代謝，使升高 fentanyl療效及毒性副作用如呼吸抑制等。 併用時應密切觀察病人臨床反應，必要時調降fentanyl劑量。",
+      "generic": "Fentanyl 1.375 mg",
+      "brand": "Opiodur"
+    },
+    {
+      "text": "CV/心律不整 Cordarone tab 200 mg (Amiodarone) 絕對不可併用 緩慢 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少amiodarone代謝，使升 高amiodarone血中濃度，引發嚴重心搏過慢、心律不整等毒性作 絕對不可併用。此交互作用在停用amiodarone後仍可能持續數週至數月。",
+      "generic": "Amiodarone",
+      "brand": "Cordarone"
+    },
+    {
+      "text": "CV/心律不整 Cordarone # inj 150 mg/3 ml (Amiodarone) 絕對不可併用 緩慢 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少amiodarone代謝，使升 高amiodarone血中濃度，引發嚴重心搏過慢、心律不整等毒性作 絕對不可併用。此交互作用在停用amiodarone後仍可能持續數週至數月。",
+      "generic": "Amiodarone",
+      "brand": "Cordarone"
+    },
+    {
+      "text": "CV/心律不整 Multaq FC tab 400 mg (Dronedarone) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少dronedarone代謝，使 升高dronedarone血中濃度而引發致命性心律不整。 絕對不可併用。",
+      "generic": "Dronedarone",
+      "brand": "Multaq"
+    },
+    {
+      "text": "CV/心律不整 Tambocor tab 100 mg (Flecainide acetate) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少flecainide代謝， 使升高flecainide血中濃度而引發致命性心律不整。 絕對不可併用。",
+      "generic": "Flecainide acetate",
+      "brand": "Tambocor"
+    },
+    {
+      "text": "CV/心律不整 Rytmonorm * tab 150 mg (Propafenone) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少propafenone代謝，使 升高propafenone血中濃度，引發副作用如致命性心律不整等。 絕對不可併用。",
+      "generic": "Propafenone",
+      "brand": "Rytmonorm"
+    },
+    {
+      "text": "CV/心衰竭 Inspra FC tab 50 mg (Eplerenone) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A而減少eplerenone代謝使升高血中濃度，可 能引發高血鉀或致命性心律不整。 絕對不可併用。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "Eplerenone",
+      "brand": "Inspra"
+    },
+    {
+      "text": "CV/心衰竭 Coralan FC tab 5 mg (Ivabradine HCl) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A4而減少ivabradine代謝，使升高ivabradine 血中濃度，且併用會加成QT間隔延長而引發致命性心律不整。 絕對不可併用。",
+      "generic": "Ivabradine HCl",
+      "brand": "Coralan"
+    },
+    {
+      "text": "CV/心衰竭 Lanoxin * tab 0.25 mg (Digoxin) 重度 緩慢 可 Ritonavir抑制P-glycoprotein而減少digoxin排除，使升高digoxin 血中濃度而引發毒性反應。併用時可能產生加成性PR間隔延長，引 發心搏過慢或房室傳導阻斷。 併用時digoxin應調降劑量約30-50%或減少用藥頻次，並監測血中濃度以調整劑 量；且需觀察有無噁心嘔吐及心律不整等毒性症狀。",
+      "generic": "Digoxin",
+      "brand": "Lanoxin"
+    },
+    {
+      "text": "CV/心衰竭 Lanoxin ##* inj 0.5 mg/2 ml (Digoxin) 重度 緩慢 可 Ritonavir抑制P-glycoprotein而減少digoxin排除，使升高digoxin 血中濃度而引發毒性反應。併用時可能產生加成性PR間隔延長，引 發心搏過慢或房室傳導阻斷。 併用時digoxin應調降劑量約30-50%或減少用藥頻次，並監測血中濃度以調整劑 量；且需觀察有無噁心嘔吐及心律不整等毒性症狀。",
+      "generic": "Digoxin",
+      "brand": "Lanoxin"
+    },
+    {
+      "text": "CV/心衰竭 Cardiacin * elixir 0.05 mg/ml 60 ml (Digoxin) 重度 緩慢 可 Ritonavir抑制P-glycoprotein而減少digoxin排除，使升高digoxin 血中濃度而引發毒性反應。併用時可能產生加成性PR間隔延長，引 發心搏過慢或房室傳導阻斷。 併用時digoxin應調降劑量約30-50%或減少用藥頻次，並監測血中濃度以調整劑 量；且需觀察有無噁心嘔吐及心律不整等毒性症狀。",
+      "generic": "Digoxin",
+      "brand": "Cardiacin"
+    },
+    {
+      "text": "CV/心衰竭 Cardiacin * elixir 0.05 mg/ml 60 ml, (Digoxin) 重度 緩慢 可 Ritonavir抑制P-glycoprotein而減少digoxin排除，使升高digoxin 血中濃度而引發毒性反應。併用時可能產生加成性PR間隔延長，引 發心搏過慢或房室傳導阻斷。 併用時digoxin應調降劑量約30-50%或減少用藥頻次，並監測血中濃度以調整劑 量；且需觀察有無噁心嘔吐及心律不整等毒性症狀。",
+      "generic": "Digoxin",
+      "brand": "Cardiacin"
+    },
+    {
+      "text": "CV/降血脂 LipoCol Forte cap 600 mg (Red yeast rice) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少lovastatin代謝，使升高 lovastatin血中濃度而引發嚴重副作用 (如肌溶症)。 絕對不可併用。Lovastatin停用至少12小時後方能開始使用Paxlovid，應持續停 用lovastatin直至Paxlovid結束治療後五天。",
+      "generic": "Red yeast rice",
+      "brand": "LipoCol"
+    },
+    {
+      "text": "CV/降血脂 Vytorin * tab 10/20 mg (Ezetimibe 10 mg + Simvastatin 20 mg) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少simvastatin代謝，使升 高simvastatin血中濃度而引發嚴重副作用 (如肌溶症)。 絕對不可併用。Simvastatin停用至少12小時後方能開始使用Paxlovid，應持續停 用simvastatin直至Paxlovid結束治療後五天。",
+      "generic": "Ezetimibe 10 mg + Simvastatin 20 mg",
+      "brand": "Vytorin"
+    },
+    {
+      "text": "CV/降血脂 Lipitor FC * tab 10 mg (Atorvastatin) 重度 不明 尚可 Ritonavir抑制CYP3A4減少atorvastatin代謝，引發嚴重副作用 (如 肌溶症等)。 儘量避免併用，建議Paxlovid療程期間暫停使用atorvastatin，若仍需併用應使用 atorvastatin最低建議劑量並密切監測副作用。",
+      "generic": "Atorvastatin",
+      "brand": "Lipitor"
+    },
+    {
+      "text": "CV/降血脂 LIPITOR FC * TAB 20 MG (Atorvastatin) 重度 不明 尚可 Ritonavir抑制CYP3A4減少atorvastatin代謝，引發嚴重副作用 (如 肌溶症等)。 儘量避免併用，建議Paxlovid療程期間暫停使用atorvastatin，若仍需併用應使用 atorvastatin最低建議劑量並密切監測副作用。",
+      "generic": "Atorvastatin",
+      "brand": "LIPITOR"
+    },
+    {
+      "text": "CV/降血脂 Atozet FC tab 10/20 mg (Ezetimibe+ Atorvastatin) 重度 不明 尚可 Ritonavir抑制CYP3A4減少atorvastatin代謝，引發嚴重副作用 (如 肌溶症等)。 儘量避免併用，建議Paxlovid療程期間暫停使用atorvastatin，若仍需併用應使用 atorvastatin最低建議劑量並密切監測副作用。",
+      "generic": "Ezetimibe+ Atorvastatin",
+      "brand": "Atozet"
+    },
+    {
+      "text": "CV/降血脂 Crestor FC * tab 10 mg (Rosuvastatin) 重度 不明 充份 Ritonavir抑制rosuvastatin代謝，引發嚴重副作用 (如肌溶症等)。 儘量避免併用，建議Paxlovid療程期間暫停使用rosuvastatin，若仍需併用應使用 rosuvastatin最低建議劑量並密切監測副作用。",
+      "generic": "Rosuvastatin",
+      "brand": "Crestor"
+    },
+    {
+      "text": "CV/降血脂 Caduet * tab 5 mg/20 mg (Amlodipine 5 mg+Atorvastatin 20 重度 不明 尚可 Ritonavir抑制CYP3A4減少amlodipine及atorvastatin代謝，引發 嚴重副作用 (如肌溶症、低血壓、水腫等)。 儘量避免併用，建議Paxlovid療程期間暫停使用atorvastatin，若需併用建議 atorvastatin使用最低起始劑量、amlodipine劑量調降50%並密切監測副作用。",
+      "generic": "Amlodipine 5 mg+Atorvastatin 20 重度 不明 尚可 Ritonavir抑制CYP3A4減少amlodipine及atorvastatin代謝，引發 嚴重副作用 (如肌溶症、低血壓、水腫等",
+      "brand": "Caduet"
+    },
+    {
+      "text": "CV/降血脂 Juxtapid * cap 5 mg (Lomitapide) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A4而減少lomitapide代謝，使升高lomitapide 血中濃度。 絕對不可併用。",
+      "generic": "Lomitapide",
+      "brand": "Juxtapid"
+    },
+    {
+      "text": "CV/降血脂 Juxtapid * cap 10 mg (Lomitapide) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A4而減少lomitapide代謝，使升高lomitapide 血中濃度。 絕對不可併用。",
+      "generic": "Lomitapide",
+      "brand": "Juxtapid"
+    },
+    {
+      "text": "CV/降血脂 Juxtapid * cap 20 mg (Lomitapide) 絕對不可併用 不明 尚可 Ritonavir抑制CYP3A4而減少lomitapide代謝，使升高lomitapide 血中濃度。 絕對不可併用。",
+      "generic": "Lomitapide",
+      "brand": "Juxtapid"
+    },
+    {
+      "text": "CV/CCB Herbesser * tab 30 mg (Diltiazem HCl) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高diltiazem血中濃度及引發低血壓、心搏過慢 等不良反應。 應謹慎併用並密切觀察臨床反應，必要時調降calcium channel blockers劑量。",
+      "generic": "Diltiazem HCl",
+      "brand": "Herbesser"
+    },
+    {
+      "text": "CV/CCB Cardizem retard * tab 90 mg (Diltiazem) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高diltiazem血中濃度及引發低血壓、心搏過慢 等不良反應。 應謹慎併用並密切觀察臨床反應，必要時調降calcium channel blockers劑量。",
+      "generic": "Diltiazem",
+      "brand": "Cardizem"
+    },
+    {
+      "text": "CV/CCB Herbesser # inj 50 mg (Diltiazem HCl) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高diltiazem血中濃度及引發低血壓、心搏過慢 等不良反應。 應謹慎併用並密切觀察臨床反應，必要時調降calcium channel blockers劑量。",
+      "generic": "Diltiazem HCl",
+      "brand": "Herbesser"
+    },
+    {
+      "text": "CV/CCB Progor * cap 120 mg (Diltiazem HCl) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高diltiazem血中濃度及引發低血壓、心搏過慢 等不良反應。 應謹慎併用並密切觀察臨床反應，必要時調降calcium channel blockers劑量。",
+      "generic": "Diltiazem HCl",
+      "brand": "Progor"
+    },
+    {
+      "text": "CV/CCB Norvasc * tab 5 mg (Amlodipine) 重度 不明 可 Ritonavir抑制CYP3A而減少amlodipine代謝，使增加amlodipine 血中濃度及副作用 (如低血壓、水腫等) 發生之風險。 若需併用建議amlodipine劑量調降50%並密切監測副作用。",
+      "generic": "Amlodipine",
+      "brand": "Norvasc"
+    },
+    {
+      "text": "CV/CCB Nobar * tab 5 mg (Amlodipine) 重度 不明 可 Ritonavir抑制CYP3A而減少amlodipine代謝，使增加amlodipine 血中濃度及副作用 (如低血壓、水腫等) 發生之風險。 若需併用建議amlodipine劑量調降50%並密切監測副作用。",
+      "generic": "Amlodipine",
+      "brand": "Nobar"
+    },
+    {
+      "text": "CV/CCB Plendil ER * tab 5 mg (Felodipine) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高felodipine血中濃度及引發低血壓、水腫等 應謹慎併用並密切觀察臨床反應，必要時調降calcium channel blockers劑量。",
+      "generic": "Felodipine",
+      "brand": "Plendil"
+    },
+    {
+      "text": "CV/CCB Perdipine inj 10 mg/10 ml (Nicardipine HCl) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高nicardipine血中濃度及引發低血壓、水腫等 應謹慎併用並密切觀察臨床反應，必要時調降calcium channel blockers劑量。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "Nicardipine HCl",
+      "brand": "Perdipine"
+    },
+    {
+      "text": "CV/CCB Adalat OROS * tab 30 mg (Nifedipine) 重度 緩慢 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高nifedipine血中濃度及引發急性腎衰竭、低 血壓和水腫等不良反應。 併用時應密切監測血壓和心搏變化，並適度調整nifedipine劑量。",
+      "generic": "Nifedipine",
+      "brand": "Adalat"
+    },
+    {
+      "text": "CV/CCB Nifedipine \"CYH\" SRFC * tab 30 mg (Nifedipine) 重度 緩慢 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高nifedipine血中濃度及引發急性腎衰竭、低 血壓和水腫等不良反應。 併用時應密切監測血壓和心搏變化，並適度調整nifedipine劑量。",
+      "generic": "Nifedipine",
+      "brand": "Nifedipine"
+    },
+    {
+      "text": "CV/CCB Atanaal * cap 5 mg (Nifedipine) 重度 緩慢 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少calcium channel blockers代謝，使升高nifedipine血中濃度及引發急性腎衰竭、低 血壓和水腫等不良反應。 併用時應密切監測血壓和心搏變化，並適度調整nifedipine劑量。",
+      "generic": "Nifedipine",
+      "brand": "Atanaal"
+    },
+    {
+      "text": "CV/CCB Nimotop tab 30 mg (Nimodipine) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少nimodipine代謝使升高血中濃度，導 致嚴重低血壓。 儘量避免併用。",
+      "generic": "Nimodipine",
+      "brand": "Nimotop"
+    },
+    {
+      "text": "抗血栓 Plavix FC tab 75 mg (Clopidogrel) 重度 不明 可 Ritonavir抑制clopidogrel代謝而減少clopidogrel活性代謝物之生 成，使降低clopidogrel抗血小板療效。 儘量避免併用，尤其是超高栓塞風險者如六週內放置冠狀動脈支架者。若需併用 ，應密切監測病人是否出現血栓及栓塞之表徵與症狀。",
+      "generic": "Clopidogrel",
+      "brand": "Plavix"
+    },
+    {
+      "text": "抗血栓 ORFARIN #* tab 5 mg (Warfarin) 重度 緩慢 可 併用時改變warfarin代謝，可能導致INR數值不穩定。 若需併用應密切監測PT、INR及臨床症狀以調整warfarin劑量。",
+      "generic": "Warfarin",
+      "brand": "ORFARIN"
+    },
+    {
+      "text": "抗血栓 Cofarin #* tab 1 mg (Warfarin) 重度 緩慢 可 併用時改變warfarin代謝，可能導致INR數值不穩定。 若需併用應密切監測PT、INR及臨床症狀以調整warfarin劑量。",
+      "generic": "Warfarin",
+      "brand": "Cofarin"
+    },
+    {
+      "text": "抗血栓 ELIQUIS FC #* tab 5 MG (Apixaban) 重度 不明 尚可 Ritonavir抑制CYP3A4及P-glycoprotein而減少apixaban代謝與排 除，使增加出血風險。 服用apixaban 2.5 mg bid者應避免併用；服用apixaban 5或10 mg bid者，併用 時建議apixaban劑量調降50%，並密切觀察病人是否有出血癥狀。",
+      "generic": "Apixaban",
+      "brand": "ELIQUIS"
+    },
+    {
+      "text": "抗血栓 Eliquis FC #* tab 2.5 mg (Apixaban) 重度 不明 尚可 Ritonavir抑制CYP3A4及P-glycoprotein而減少apixaban代謝與排 除，使增加出血風險。 服用apixaban 2.5 mg bid者應避免併用；服用apixaban 5或10 mg bid者，併用 時建議apixaban劑量調降50%，並密切觀察病人是否有出血癥狀。",
+      "generic": "Apixaban",
+      "brand": "Eliquis"
+    },
+    {
+      "text": "抗血栓 Xarelto FC #* tab 10 mg (Rivaroxaban) 重度 不明 充份 Ritonavir抑制CYP3A4和P-glycoprotein而減少rivaroxaban代謝與 排除，使升高rivaroxaban血中濃度及出血風險。 儘量避免併用。",
+      "generic": "Rivaroxaban",
+      "brand": "Xarelto"
+    },
+    {
+      "text": "抗血栓 Xarelto FC #* tab 15 mg (Rivaroxaban) 重度 不明 充份 Ritonavir抑制CYP3A4和P-glycoprotein而減少rivaroxaban代謝與 排除，使升高rivaroxaban血中濃度及出血風險。 儘量避免併用。",
+      "generic": "Rivaroxaban",
+      "brand": "Xarelto"
+    },
+    {
+      "text": "抗血栓 Xarelto FC #* tab 20 mg (Rivaroxaban) 重度 不明 充份 Ritonavir抑制CYP3A4和P-glycoprotein而減少rivaroxaban代謝與 排除，使升高rivaroxaban血中濃度及出血風險。 儘量避免併用。",
+      "generic": "Rivaroxaban",
+      "brand": "Xarelto"
+    },
+    {
+      "text": "胸腔科/Salmeterol Seretide 125 * evohaler (Fluticasone 125ug+ Salmeterol 25ug) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少salmeterol代謝，導致心血管不良事 件如QT間隔延長、心搏過速等。 不建議併用。",
+      "generic": "Fluticasone 125ug+ Salmeterol 25ug",
+      "brand": "Seretide"
+    },
+    {
+      "text": "胸腔科/Salmeterol Seretide 250 * evohaler (Fluticasone 250ug+ Salmeterol 25ug) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少salmeterol代謝，導致心血管不良事 件如QT間隔延長、心搏過速等。 不建議併用。",
+      "generic": "Fluticasone 250ug+ Salmeterol 25ug",
+      "brand": "Seretide"
+    },
+    {
+      "text": "風濕免疫科 Quinidine \"NYSCO*cap 200mg (Quinidine) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少quinidine代謝，使升高 quinidine血中濃度，引發毒性反應如心律不整、低血壓等。 絕對不可併用。",
+      "generic": "Quinidine",
+      "brand": "Quinidine"
+    },
+    {
+      "text": "風濕免疫科 Quinidine \"U-LIANG\" * tab 200 mg (Quinidine sulfate) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少quinidine代謝，使升高 quinidine血中濃度，引發毒性反應如心律不整、低血壓等。 絕對不可併用。",
+      "generic": "Quinidine sulfate",
+      "brand": "Quinidine"
+    },
+    {
+      "text": "風濕免疫科 Colchicine \"Synmosa\" * tab 0.5mg (Colchicine) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4和P-glycoprotein而減少 colchicine代謝，使升高colchicine血中濃度而引發毒性作用。 肝腎功能不良者絕對不可併用。肝腎功能正常且14天內有使用Paxlovid者，若需 併用colchicine應調降劑量並密切監測其毒性作用。",
+      "generic": "Colchicine",
+      "brand": "Colchicine"
+    },
+    {
+      "text": "CNS/Ergots Lesiton * cap 5 mg (Dihydroergotamine) 絕對不可併用 不明 可 Nirmatrelvir/ritonavir抑制ergot代謝，可能引發ergot急性毒性如 嚴重週邊血管收縮及缺血反應等。 絕對不可併用。",
+      "generic": "Dihydroergotamine",
+      "brand": "Lesiton"
+    },
+    {
+      "text": "婦產科/Ergots Methylergonovine \"TY\"*inj 0.2mg/1ml(Methylergonovine) 絕對不可併用 不明 可 Nirmatrelvir/ritonavir抑制ergot代謝，可能引發ergot急性毒性如 嚴重週邊血管收縮及缺血反應等。 絕對不可併用。",
+      "generic": "Methylergonovine",
+      "brand": "Methylergonovine"
+    },
+    {
+      "text": "婦產科/Ergots Ergometrine \"Y.S.\" * tab 0.2 mg (Ergometrine maleate) 絕對不可併用 不明 可 Nirmatrelvir/ritonavir抑制ergot代謝，可能引發ergot急性毒性如 嚴重週邊血管收縮及缺血反應等。 絕對不可併用。",
+      "generic": "Ergometrine maleate",
+      "brand": "Ergometrine"
+    },
+    {
+      "text": "婦產科/Ergots Ergometrine \"Johnson\" * tab 0.2 mg (Ergometrine) 絕對不可併用 不明 可 Nirmatrelvir/ritonavir抑制ergot代謝，可能引發ergot急性毒性如 絕對不可併用。",
+      "generic": "Ergometrine",
+      "brand": "Ergometrine"
+    },
+    {
+      "text": "婦產科/荷爾蒙 Yasmin tab (21's) (Drospirenone 3mg/Ethinylestradiol 0.03mg) 重度 不明 尚可 Nirmatrelvir/ritonavir影響drospirenone/ethinylestradiol濃度， 影響口服避孕藥療效；併用時可能加成肝毒性。 併用時應告知可能導致避孕失敗，建議改採其它非荷爾蒙之避孕方式並密切監測 AST/ALT變化。",
+      "generic": "21's",
+      "brand": "Yasmin"
+    },
+    {
+      "text": "CNS/Bromocriptine Syntocriptine * tab 2.5 mg (Bromocriptine) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少bromocriptine代謝，使 增加bromocriptine血中濃度及副作用。 儘量避免併用，若需併用建議應調降bromocriptine劑量並密切監測副作用。",
+      "generic": "Bromocriptine",
+      "brand": "Syntocriptine"
+    },
+    {
+      "text": "CNS/抗癲癇 TEGRETOL CR.FC * tab 200 mg (Carbamazepine) 絕對不可併用 不明 可 Carbamazepine誘導CYP3A4而增加nirmatrelvir/ritonavir代謝， 使降低抗病毒療效。 絕對不可併用。",
+      "generic": "Carbamazepine",
+      "brand": "TEGRETOL"
+    },
+    {
+      "text": "CNS/抗癲癇 Tegretol \"Italy\" * tab 200 mg (Carbamazepine) 絕對不可併用 不明 可 Carbamazepine誘導CYP3A4而增加nirmatrelvir/ritonavir代謝， 使降低抗病毒療效。 絕對不可併用。",
+      "generic": "Carbamazepine",
+      "brand": "Tegretol"
+    },
+    {
+      "text": "CNS/抗癲癇 Phenobital ^ inj 100 mg/1 ml \"T.F\" (Phenobarbital) 絕對不可併用 不明 尚可 Phenobarbital誘導CYP3A而增加nirmatrelvir/ritonavir代謝，使 降低抗病毒療效而可能產生抗藥性。併用ritonavir降低 phenobarbital血中濃度與療效。 絕對不可併用。",
+      "generic": "Phenobarbital",
+      "brand": "Phenobital"
+    },
+    {
+      "text": "CNS/抗癲癇 Phenobarbital \"Johnson\" 0.33 ^* tab (10 mg/pk)(Phenobarbital 絕對不可併用 不明 尚可 Phenobarbital誘導CYP3A而增加nirmatrelvir/ritonavir代謝，使 降低抗病毒療效而可能產生抗藥性。併用ritonavir降低 phenobarbital血中濃度與療效。 絕對不可併用。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "10 mg/pk",
+      "brand": "Phenobarbital"
+    },
+    {
+      "text": "CNS/抗癲癇 Phenobarbital \"Johnson\" ^* tab 30 mg/PTP (Phenobarbital) 絕對不可併用 不明 尚可 Phenobarbital誘導CYP3A而增加nirmatrelvir/ritonavir代謝，使 降低抗病毒療效而可能產生抗藥性。併用ritonavir降低 phenobarbital血中濃度與療效。 絕對不可併用。",
+      "generic": "Phenobarbital",
+      "brand": "Phenobarbital"
+    },
+    {
+      "text": "CNS/抗癲癇 Aleviatin inj 250 mg/5 ml (Phenytoin, Dilantin) 絕對不可併用 不明 尚可 Phenytoin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 抗病毒療效而可能產生抗藥性。Nirmatrelvir/ritonavir降低 phenytoin血中濃度。 絕對不可併用。",
+      "generic": "Phenytoin, Dilantin",
+      "brand": "Aleviatin"
+    },
+    {
+      "text": "CNS/抗癲癇 Phenytoin tab 100 mg VPP (Phenytoin, Dilantin) 絕對不可併用 不明 尚可 Phenytoin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 抗病毒療效而可能產生抗藥性。Nirmatrelvir/ritonavir降低 phenytoin血中濃度。 絕對不可併用。",
+      "generic": "Phenytoin, Dilantin",
+      "brand": "Phenytoin"
+    },
+    {
+      "text": "CNS/抗癲癇 Phenytoin 0.25 tab (25 mg/pk)(Phenytoin, Dilantin) 絕對不可併用 不明 尚可 Phenytoin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 抗病毒療效而可能產生抗藥性。Nirmatrelvir/ritonavir降低 phenytoin血中濃度。 絕對不可併用。",
+      "generic": "25 mg/pk",
+      "brand": "Phenytoin"
+    },
+    {
+      "text": "CNS/BZDs Halcion > tab 0.25 mg (Triazolam) 絕對不可併用 不明 可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少triazolam代謝， 引發過度鎮靜或呼吸抑制等毒性副作用。 絕對不可併用。",
+      "generic": "Triazolam",
+      "brand": "Halcion"
+    },
+    {
+      "text": "CNS/BZDs Dormicum \"Switzerland\" FC ^* tab 7.5 mg (Midazolam) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少口服midazolam代謝，使 加重或延長中樞神經抑制作用。 絕對不可併用。",
+      "generic": "Midazolam",
+      "brand": "Dormicum"
+    },
+    {
+      "text": "CNS/BZDs Epistatus \"FREE\" oromucosal ^* soln 10mg/1ml/PFS (Midazolam) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少口服midazolam代謝，使 加重或延長中樞神經抑制作用。 絕對不可併用。",
+      "generic": "Midazolam",
+      "brand": "Epistatus"
+    },
+    {
+      "text": "CNS/BZDs Epistatus oromucosal ^* soln 10 mg/1 ml/PFS (Midazolam) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少口服midazolam代謝，使 加重或延長中樞神經抑制作用。 絕對不可併用。",
+      "generic": "Midazolam",
+      "brand": "Epistatus"
+    },
+    {
+      "text": "CNS/BZDs Dormicum #^* inj 5 mg/5 ml (Midazolam) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少midazolam代謝，使增加 midazolam中樞神經抑制作用，引發過度鎮靜、呼吸抑制等不良反 若需併用應調降midazolam劑量並密切監測是否出現鎮靜和呼吸抑制等不良反 應。",
+      "generic": "Midazolam",
+      "brand": "Dormicum"
+    },
+    {
+      "text": "CNS/BZDs Rivotril \"Spain\" ^* tab 0.5 mg (Clonazepam) 重度 緩慢 可 Ritonavir抑制clonazepam代謝，引發過度鎮靜或呼吸抑制等毒性 副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Clonazepam",
+      "brand": "Rivotril"
+    },
+    {
+      "text": "CNS/BZDs RIVOTRIL \"Spain\" ^* TAB 2 MG (CLONAZEPAM) 重度 緩慢 可 Ritonavir抑制clonazepam代謝，引發過度鎮靜或呼吸抑制等毒性 副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "CLONAZEPAM",
+      "brand": "RIVOTRIL"
+    },
+    {
+      "text": "CNS/BZDs Ripam ^ * tab 0.5 mg (Clonazepam) 重度 緩慢 可 Ritonavir抑制clonazepam代謝，引發過度鎮靜或呼吸抑制等毒性 副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Clonazepam",
+      "brand": "Ripam"
+    },
+    {
+      "text": "CNS/BZDs RIPAM ^ * TAB 2 MG (Clonazepam) 重度 緩慢 可 Ritonavir抑制clonazepam代謝，引發過度鎮靜或呼吸抑制等毒性 副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Clonazepam",
+      "brand": "RIPAM"
+    },
+    {
+      "text": "CNS/BZDs Dupin #^* inj 10 mg/2 ml (Diazepam) 重度 緩慢 尚可 Ritonavir抑制diazepam代謝，引發過度鎮靜或呼吸抑制等毒性副 作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Diazepam",
+      "brand": "Dupin"
+    },
+    {
+      "text": "CNS/BZDs Vanconin ^* tab 2 mg/PTP (Diazepam, Valium) 重度 緩慢 尚可 Ritonavir抑制diazepam代謝，引發過度鎮靜或呼吸抑制等毒性副 作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Diazepam, Valium",
+      "brand": "Vanconin"
+    },
+    {
+      "text": "CNS/BZDs Vanconin 0.33 ^* tab (0.66 mg/pk) (Diazepam, Valium) 重度 緩慢 尚可 Ritonavir抑制diazepam代謝，引發過度鎮靜或呼吸抑制等毒性副 作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "0.66 mg/pk",
+      "brand": "Vanconin"
+    },
+    {
+      "text": "CNS/BZDs Stesolid rectal ^ tube 10 mg/2.5 ml (Diazepam) 重度 緩慢 尚可 Ritonavir抑制diazepam代謝，引發過度鎮靜或呼吸抑制等毒性副 作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Diazepam",
+      "brand": "Stesolid"
+    },
+    {
+      "text": "CNS/精神科用藥 Latuda tab 40 mg (Lurasidone HCl) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少lurasidone代謝，使升 高lurasidone血中濃度，引發毒性反應如心律不整等。 絕對不可併用。",
+      "generic": "Lurasidone HCl",
+      "brand": "Latuda"
+    },
+    {
+      "text": "CNS/精神科用藥 Geodon cap 40 mg (Ziprasidone) 重度 不明 尚可 併用時可能加成QT間隔延長，引發致命性心律不整。 儘量避免併用，若需併用應密切監測心電圖變化。",
+      "generic": "Ziprasidone",
+      "brand": "Geodon"
+    },
+    {
+      "text": "CNS/精神科用藥 Clozaril * tab 100 mg (Clozapine) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少clozapine代謝，使升高 clozapine血中濃度，引發毒性反應如心律不整等。 絕對不可併用。",
+      "generic": "Clozapine",
+      "brand": "Clozaril"
+    },
+    {
+      "text": "CNS/精神科用藥 Clopine * tab 25 mg (Clozapine) 絕對不可併用 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少clozapine代謝，使升高 clozapine血中濃度，引發毒性反應如心律不整等。 絕對不可併用。",
+      "generic": "Clozapine",
+      "brand": "Clopine"
+    },
+    {
+      "text": "CNS/精神科用藥 Buprotrin SR FC * tab 150 mg (Bupropion HCl) 重度 緩慢 可 Ritonavir誘導CYP2B6，與nirmatrelvir均會增加bupropion代謝使 降低療效。Bupropion抑制CYP2D6而減少ritonavir代謝使增加副 儘量避免併用，若需併用應密切監測bupropion療效和ritonavir副作用，必要時 適度調增bupropion劑量。",
+      "generic": "Bupropion HCl",
+      "brand": "Buprotrin"
+    },
+    {
+      "text": "CNS/精神科用藥 Mesyrel * tab 50 mg (Trazodone) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少trazodone代謝，使升 高trazodone血中濃度及副作用；併用時可能加成QT間隔延長。 儘量避免併用，若需併用時應密切觀察病人臨床反應，必要時調降trazodone劑 量。",
+      "generic": "Trazodone",
+      "brand": "Mesyrel"
+    },
+    {
+      "text": "CNS/精神科用藥 Mesyrel * tab 50 mg/PTP (Trazodone) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少trazodone代謝，使升 高trazodone血中濃度及副作用；併用時可能加成QT間隔延長。 儘量避免併用，若需併用時應密切觀察病人臨床反應，必要時調降trazodone劑 量。",
+      "generic": "Trazodone",
+      "brand": "Mesyrel"
+    },
+    {
+      "text": "CNS/精神科用藥 Seroquel * tab 25 mg (Quetiapine) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少quetiapine代謝，使增加 quetiapine血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用建議quetiapine劑量調降為1/6並密切觀察病人臨床反應 及心電圖變化。",
+      "generic": "Quetiapine",
+      "brand": "Seroquel"
+    },
+    {
+      "text": "CNS/精神科用藥 SEROQUEL XR ER * TAB 200 MG (QUETIAPINE) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少quetiapine代謝，使增加 quetiapine血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用建議quetiapine劑量調降為1/6並密切觀察病人臨床反應 及心電圖變化。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "QUETIAPINE",
+      "brand": "SEROQUEL"
+    },
+    {
+      "text": "CNS/精神科用藥 Seroquel XR ER * tab 50 mg (Quetiapine) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少quetiapine代謝，使增加 quetiapine血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用建議quetiapine劑量調降為1/6並密切觀察病人臨床反應 及心電圖變化。",
+      "generic": "Quetiapine",
+      "brand": "Seroquel"
+    },
+    {
+      "text": "CNS/精神科用藥 UTAPINE FC * TAB 200 mg (QUETIAPINE) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少quetiapine代謝，使增加 quetiapine血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用建議quetiapine劑量調降為1/6並密切觀察病人臨床反應 及心電圖變化。",
+      "generic": "QUETIAPINE",
+      "brand": "UTAPINE"
+    },
+    {
+      "text": "CNS/精神科用藥 Utapine FC * tab 25 mg (Quetiapine) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A而減少quetiapine代謝，使增加 quetiapine血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用建議quetiapine劑量調降為1/6並密切觀察病人臨床反應 及心電圖變化。",
+      "generic": "Quetiapine",
+      "brand": "Utapine"
+    },
+    {
+      "text": "感染科/TB用藥 Rifampin * cap 300 mg VPP (Rifampicin) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin",
+      "brand": "Rifampin"
+    },
+    {
+      "text": "感染科/TB用藥 Rifampin * cap 450 mg VPP (Rifampicin) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin",
+      "brand": "Rifampin"
+    },
+    {
+      "text": "感染科/TB用藥 Rifater SC tab (Rifampicin 120mg + INH 80mg + PZA 250mg) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin 120mg + INH 80mg + PZA 250mg",
+      "brand": "Rifater"
+    },
+    {
+      "text": "感染科/TB用藥 Rifinah-150 SC * tab (Rifampicin 150 mg + INH 100 mg) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin 150 mg + INH 100 mg",
+      "brand": "Rifinah-150"
+    },
+    {
+      "text": "感染科/TB用藥 Rifinah-300 SC * tab (Rifampicin 300 mg + INH 150 mg) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin 300 mg + INH 150 mg",
+      "brand": "Rifinah-300"
+    },
+    {
+      "text": "感染科/TB用藥 Rina * cap (Rifampicin 300 mg + INH 150 mg) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin 300 mg + INH 150 mg",
+      "brand": "Rina"
+    },
+    {
+      "text": "感染科/TB用藥 Rifampicin \"Kojar\" * cap 300 mg (Rifampicin) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "Rifampicin",
+      "brand": "Rifampicin"
+    },
+    {
+      "text": "感染科/TB用藥 AKuriT-4 FC * tab (RMP 150mg+INH 75mg+EMB 275mg+PZA 400mg) 絕對不可併用 不明 可 Rifampin誘導CYP3A4而增加nirmatrelvir/ritonavir代謝，使降低 nirmatrelvir/ritonavir抗病毒療效。 絕對不可併用。針對rifampin，可考慮依病況改至其它交互作用風險較低之抗結 核病藥物如rifabutin。",
+      "generic": "RMP 150mg+INH 75mg+EMB 275mg+PZA 400mg",
+      "brand": "AKuriT-4"
+    },
+    {
+      "text": "感染科/TB用藥 Mycobutin cap 150 mg (Rifabutin) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少rifabutin代謝，使增加 rifabutin血中濃度。 若需併用應調降rifabutin劑量並監測其副作用，rifabutin最大劑量不超過150 mg qod-tiw。",
+      "generic": "Rifabutin",
+      "brand": "Mycobutin"
+    },
+    {
+      "text": "感染科/Azoles Vfend for inj 200 mg (Voriconazole) 重度 緩慢 可 Nirmatrelvir/ritonavir誘導CYP2C9和2C19而增加voriconazole代 謝，使降低voriconazole血中濃度及療效。 儘量避免併用，若需併用應謹慎評估用藥利弊並密切監測voriconazole療效。",
+      "generic": "Voriconazole",
+      "brand": "Vfend"
+    },
+    {
+      "text": "感染科/Azoles Vfend FC * tab 200 mg (Voriconazole) 重度 緩慢 可 Nirmatrelvir/ritonavir誘導CYP2C9和2C19而增加voriconazole代 謝，使降低voriconazole血中濃度及療效。 儘量避免併用，若需併用應謹慎評估用藥利弊並密切監測voriconazole療效。",
+      "generic": "Voriconazole",
+      "brand": "Vfend"
+    },
+    {
+      "text": "感染科/Azoles Sporanox cap 100 mg (Itraconazole) 重度 緩慢 可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少itraconazole代謝 ，使增加itraconazole血中濃度及副作用；itraconazole會增加 nirmatrelvir血中濃度。 應謹慎併用，併用時itraconazole每日最大劑量限200 mg。",
+      "generic": "Itraconazole",
+      "brand": "Sporanox"
+    },
+    {
+      "text": "感染科/Azoles Cresemba powder for inj 200 mg (Isavuconazole) 重度 不明 可 Nirmatrelvir/ritonavir抑制CYP3A4而減少isavuconazonium sulfate及其活性代謝物之代謝，使增加isavuconazole血中濃度； isavuconazole會降低ritonavir血中濃度及抗病毒作用。 儘量避免併用，若需併用時應密切觀察病人臨床反應，必要時調整藥物劑量。",
+      "generic": "Isavuconazole",
+      "brand": "Cresemba"
+    },
+    {
+      "text": "感染科/Macrolides Klaricid * tab 500 mg (Clarithromycin) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少clarithromycin代謝，使 增加clarithromycin血中濃度；併用時可能加成QT間隔延長。 併用時clarithromycin劑量不宜超過1000 mg/day並應依腎功能降劑量：Clcr 30- 60 mL/min者調降50%，Clcr <30 mL/min者調降75%；另應監測心臟功能及心 電圖變化。若感染Mycobacterium avium，建議改用其他抗生素治療。",
+      "generic": "Clarithromycin",
+      "brand": "Klaricid"
+    },
+    {
+      "text": "感染科/Macrolides Klaricid iv inj 500 mg (Clarithromycin) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少clarithromycin代謝，使 增加clarithromycin血中濃度；併用時可能加成QT間隔延長。 併用時clarithromycin劑量不宜超過1000 mg/day並應依腎功能降劑量：Clcr 30- 60 mL/min者調降50%，Clcr <30 mL/min者調降75%；另應監測心臟功能及心 電圖變化。若感染Mycobacterium avium，建議改用其他抗生素治療。",
+      "generic": "Clarithromycin",
+      "brand": "Klaricid"
+    },
+    {
+      "text": "感染科/Macrolides Erymycin cap 250 mg VPP (Erythromycin) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少erythromycin代謝，使 增加erythromycin血中濃度；併用時可能加成QT間隔延長。 併用時應密切監測心電圖變化及病人臨床反應，必要時調整erythromycin劑量， 或改以azithromycin取代。",
+      "generic": "Erythromycin",
+      "brand": "Erymycin"
+    },
+    {
+      "text": "感染科/Macrolides Erythrocin-iv for inj 500 mg (Erythromycin lactobionate) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少erythromycin代謝，使 增加erythromycin血中濃度；併用時可能加成QT間隔延長。 併用時應密切監測心電圖變化及病人臨床反應，必要時調整erythromycin劑量， 或改以azithromycin取代。",
+      "generic": "Erythromycin lactobionate",
+      "brand": "Erythrocin-iv"
+    },
+    {
+      "text": "感染科/抗病毒 Duovir-N tab(Lamivudine 150mg+Zidovudine 300mg+Nevirapine200 重度 緩慢 可 機轉不明，併用時可能降低zidovudine血中濃度及抗病毒療效。 若需併用應密切監測zidovudine療效。",
+      "generic": "",
+      "brand": "Duovir-N"
+    },
+    {
+      "text": "感染科/抗病毒 Combivir * tab (Lamivudine 150mg +Zidovudine 300mg) 重度 緩慢 可 機轉不明，併用時可能降低zidovudine血中濃度及抗病毒療效。 若需併用應密切監測zidovudine療效。",
+      "generic": "Lamivudine 150mg +Zidovudine 300mg",
+      "brand": "Combivir"
+    },
+    {
+      "text": "感染科/抗病毒 Retrovir syr 10mg/ml 240ml CDC(Zidovudine,Azidothymidine,AZ) 重度 緩慢 可 機轉不明，併用時可能降低zidovudine血中濃度及抗病毒療效。 若需併用應密切監測zidovudine療效。",
+      "generic": "Zidovudine,Azidothymidine,AZ",
+      "brand": "Retrovir"
+    },
+    {
+      "text": "感染科/抗病毒 Retrovir infusion 200 mg/20 ml CDC (Zidovudine) 重度 緩慢 可 機轉不明，併用時可能降低zidovudine血中濃度及抗病毒療效。 若需併用應密切監測zidovudine療效。",
+      "generic": "Zidovudine",
+      "brand": "Retrovir"
+    },
+    {
+      "text": "感染科/抗病毒 Prezcobix FC tab  (Darunavir 800 mg + Cobicistat 150 mg) 重度 不明 可 Cobicistat和ritonavir均會抑制CYP3A，使升高二藥血中濃度及副 作用。 不建議併用，若需併用應密切監測兩藥副作用。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "Darunavir 800 mg + Cobicistat 150 mg",
+      "brand": "Prezcobix"
+    },
+    {
+      "text": "感染科/抗病毒 Symtuza FC tab (Darunavir/Cobicistat/Emtricitabine/ Tenofovir 重度 不明 可 Cobicistat和ritonavir均會抑制CYP3A，使升高二藥血中濃度及副 作用。 不建議併用，若需併用應密切監測兩藥副作用。",
+      "generic": "",
+      "brand": "Symtuza"
+    },
+    {
+      "text": "感染科/抗病毒 Atripla * tab (Efavirenz 600+Emtricitabine 200+Tenofovir) 重度 不明 充份 機轉不明，併用時會升高efavirenz和ritonavir血中濃度，且增加嚴 重肝臟毒性之風險；併用時可能加成QT間隔延長。 若需併用時應密切監測AST/ALT及心電圖變化。",
+      "generic": "Efavirenz 600+Emtricitabine 200+Tenofovir",
+      "brand": "Atripla"
+    },
+    {
+      "text": "感染科/抗病毒 Reyataz * cap 200 mg (Atazanavir) - - - Ritonavir抑制CYP3A4而減少atazanavir代謝，使升高atazanavir 血中濃度和副作用。 若需併用應密切監測atazanavir副作用。",
+      "generic": "Atazanavir",
+      "brand": "Reyataz"
+    },
+    {
+      "text": "感染科/抗病毒 Reyataz * cap 150 mg (Atazanavir) - - - Ritonavir抑制CYP3A4而減少atazanavir代謝，使升高atazanavir 血中濃度和副作用。 若需併用應密切監測atazanavir副作用。",
+      "generic": "Atazanavir",
+      "brand": "Reyataz"
+    },
+    {
+      "text": "感染科/抗病毒 Viramune XR ER * tab 400 mg (Nevirapine) - - -",
+      "generic": "Nevirapine",
+      "brand": "Viramune"
+    },
+    {
+      "text": "感染科/抗病毒 Biktarvy tab 50/200/25mg(Bictegravir/Emtricitab ine/Tenofovir - - - 機轉不明，併用時可能增加tenofovir血中濃度和副作用。 若需併用應密切觀察副作用 (如肝腎毒性)，腎功能不良者尤應謹慎併用。",
+      "generic": "Bictegravir/Emtricitab ine/Tenofovir - - - 機轉不明，併用時可能增加tenofovir血中濃度和副作用。 若需併用應密切觀察副作用 (如肝腎毒性",
+      "brand": "Biktarvy"
+    },
+    {
+      "text": "感染科/抗病毒 Zepatier FC tab 50 mg/100 mg (Elbasvir + Grazoprevir) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少elbasvir和grazoprevir 代謝，增加Zepatier副作用如ALT升高等風險。 儘量避免併用。",
+      "generic": "Elbasvir + Grazoprevir",
+      "brand": "Zepatier"
+    },
+    {
+      "text": "感染科/抗病毒 Maviret FC tab 100 mg/40 mg (Glecaprevir+ Pibrentasvir) 重度 不明 充份 Nirmatrelvir/ritonavir抑制P-glycoprotein，使增加glecaprevir和 pibrentasvir之血中濃度及副作用。 不建議併用。",
+      "generic": "Glecaprevir+ Pibrentasvir",
+      "brand": "Maviret"
+    },
+    {
+      "text": "感染科/抗病毒 Epclusa FC tab 400 mg/100 mg (Sofosbuvir + Velpatasvir) - - - Ritonavir抑制CYP3A4和P-glycoprotein而減少 sofosbuvir/velpatasvir代謝與排除，使增加 應謹慎併用。",
+      "generic": "Sofosbuvir + Velpatasvir",
+      "brand": "Epclusa"
+    },
+    {
+      "text": "移植/免疫抑制劑 Sandimmun neoral oral sol 100 mg/ml 50 ml (Ciclosporine) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少cyclosporine代謝，使 升高cyclosporine血中濃度。 開始併用Paxlovid時，cyclosporine劑量應調降至原劑量之1/5並依血中濃度適度 調整劑量，併用期間應密切監測腎功能變化。",
+      "generic": "Ciclosporine",
+      "brand": "Sandimmun"
+    },
+    {
+      "text": "移植/免疫抑制劑 Sandimmun inj 50 mg/ml 1 ml (Ciclosporine, Cyclosporine) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少cyclosporine代謝，使 升高cyclosporine血中濃度。 開始併用Paxlovid時，cyclosporine劑量應調降至原劑量之1/5並依血中濃度適度 調整劑量，併用期間應密切監測腎功能變化。",
+      "generic": "Ciclosporine, Cyclosporine",
+      "brand": "Sandimmun"
+    },
+    {
+      "text": "移植/免疫抑制劑 Sandimmun neoral * cap 25 mg (Ciclosporine, Cyclosporine) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少cyclosporine代謝，使 升高cyclosporine血中濃度。 開始併用Paxlovid時，cyclosporine劑量應調降至原劑量之1/5並依血中濃度適度 調整劑量，併用期間應密切監測腎功能變化。",
+      "generic": "Ciclosporine, Cyclosporine",
+      "brand": "Sandimmun"
+    },
+    {
+      "text": "移植/免疫抑制劑 Sandimmun neoral * cap 100 mg (Ciclosporine, Cyclosporine) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少cyclosporine代謝，使 升高cyclosporine血中濃度。 開始併用Paxlovid時，cyclosporine劑量應調降至原劑量之1/5並依血中濃度適度 調整劑量，併用期間應密切監測腎功能變化。",
+      "generic": "Ciclosporine, Cyclosporine",
+      "brand": "Sandimmun"
+    },
+    {
+      "text": "移植/免疫抑制劑 Prograf * cap 1 mg (Tacrolimus) 重度 快速 可 Nirmatrelvir/ritonavir抑制CYP3A4而減少tacrolimus代謝，使快 速升高tacrolimus血中濃度；併用時可能加成QT間隔延長。 開始併用Paxlovid時，應調降tacrolimus劑量並密切監測血中濃度變化；若無法 密切監測血中濃度時，於Paxlovid療程間應暫時停用tacrolimus。",
+      "generic": "Tacrolimus",
+      "brand": "Prograf"
+    },
+    {
+      "text": "移植/免疫抑制劑 Prograf * cap 0.5 mg (Tacrolimus) 重度 快速 可 Nirmatrelvir/ritonavir抑制CYP3A4而減少tacrolimus代謝，使快 速升高tacrolimus血中濃度；併用時可能加成QT間隔延長。 開始併用Paxlovid時，應調降tacrolimus劑量並密切監測血中濃度變化；若無法 密切監測血中濃度時，於Paxlovid療程間應暫時停用tacrolimus。",
+      "generic": "Tacrolimus",
+      "brand": "Prograf"
+    },
+    {
+      "text": "移植/免疫抑制劑 Advagraf PR * cap 1 mg (Tacrolimus) 重度 快速 可 Nirmatrelvir/ritonavir抑制CYP3A4而減少tacrolimus代謝，使快 速升高tacrolimus血中濃度；併用時可能加成QT間隔延長。 開始併用Paxlovid時，應調降tacrolimus劑量並密切監測血中濃度變化；若無法 密切監測血中濃度時，於Paxlovid療程間應暫時停用tacrolimus。",
+      "generic": "Tacrolimus",
+      "brand": "Advagraf"
+    },
+    {
+      "text": "移植/免疫抑制劑 Rapamune tab 1 mg (Sirolimus) 重度 不明 尚可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少sirolimus代謝， 使增加sirolimus血中濃度，可能引發血液毒性、低血鉀或腹瀉等嚴 重不良反應。 儘量避免併用。若需併用應調降sirolimus劑量50-90%並密切監測血中濃度變 化。",
+      "generic": "Sirolimus",
+      "brand": "Rapamune"
+    },
+    {
+      "text": "移植/免疫抑制劑 Certican * tab 0.5 mg (Everolimus) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4及P-glycoprotein而減少 everolimus代謝與排除，使升高everolimus血中濃度而引發毒性副 作用。 儘量避免併用，若需併用時應密切監測everolimus血中濃度，必要時調整 everolimus劑量。",
+      "generic": "Everolimus",
+      "brand": "Certican"
+    },
+    {
+      "text": "移植/免疫抑制劑 Votubia * tab 2.5 mg (Everolimus) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4及P-glycoprotein而減少 everolimus代謝與排除，使升高everolimus血中濃度而引發毒性副 作用。 儘量避免併用，若需併用時應密切監測everolimus血中濃度，必要時調整 everolimus劑量。",
+      "generic": "Everolimus",
+      "brand": "Votubia"
+    },
+    {
+      "text": "Corticosteroid Methasone * inj 5 mg/1 ml/vl (Dexamethasone, Decadron) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Dexamethasone, Decadron",
+      "brand": "Methasone"
+    },
+    {
+      "text": "Corticosteroid Dorison * tab 4 mg (Dexamethasone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Dexamethasone",
+      "brand": "Dorison"
+    },
+    {
+      "text": "Corticosteroid Decone * tab 0.5 mg (Dexamethasone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Dexamethasone",
+      "brand": "Decone"
+    },
+    {
+      "text": "Corticosteroid Dexason * tab 0.5 mg (Dexamethasone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "Dexamethasone",
+      "brand": "Dexason"
+    },
+    {
+      "text": "Corticosteroid Ucalon * tab 0.5 mg (Dexamethasone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Dexamethasone",
+      "brand": "Ucalon"
+    },
+    {
+      "text": "Corticosteroid Solu-medrol * inj 500 mg (Methylprednisolone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Methylprednisolone",
+      "brand": "Solu-medrol"
+    },
+    {
+      "text": "Corticosteroid MeDAson for * inj 125 mg (Methylprednisolone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Methylprednisolone",
+      "brand": "MeDAson"
+    },
+    {
+      "text": "Corticosteroid Metisone * tab 4 mg (Methylprednisolone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Methylprednisolone",
+      "brand": "Metisone"
+    },
+    {
+      "text": "Corticosteroid Methylone * tab 4 mg (Methylprednisolone) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Methylprednisolone",
+      "brand": "Methylone"
+    },
+    {
+      "text": "Corticosteroid SHINCORT I.M. * INJ 40 MG/1 ML (Triamcinolone acetonide) 重度 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝， 使升高corticosteroids血中濃度，可能降低血清皮質醇濃度而引發 Cushing syndrome。 儘量避免併用，建議改用prednisolone。",
+      "generic": "Triamcinolone acetonide",
+      "brand": "SHINCORT"
+    },
+    {
+      "text": "Corticosteroid Prednisolone \"VPP\" * tab 5 mg (Prednisolone) - 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝使 升高血中濃度，可能降低血清皮質醇濃度而引發Cushing 若需併用應密切觀察副作用。",
+      "generic": "Prednisolone",
+      "brand": "Prednisolone"
+    },
+    {
+      "text": "Corticosteroid Kidsolone * oral solution 1 mg/ml 60 ml(Prednisolone) - 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝使 升高血中濃度，可能降低血清皮質醇濃度而引發Cushing 若需併用應密切觀察副作用。",
+      "generic": "Prednisolone",
+      "brand": "Kidsolone"
+    },
+    {
+      "text": "Corticosteroid Kidsolone * oral solution 1 mg/ml 60 ml(Prednisolone) - 不明 充份 Nirmatrelvir/ritonavir抑制CYP3A4而減少corticosteroids代謝使 升高血中濃度，可能降低血清皮質醇濃度而引發Cushing 若需併用應密切觀察副作用。",
+      "generic": "Prednisolone",
+      "brand": "Kidsolone"
+    },
+    {
+      "text": "腫瘤科 VERZENIO FC * TAB 150 MG (Abemaciclib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少abemaciclib及其活性代 謝物之代謝，使增加abemaciclib血中濃度和副作用。 若需併用應調降abemaciclib劑量，建議於Paxlovid停用後3-5個半衰期 (一般約 19-40小時)，再將abemaciclib調增至一般建議劑量。",
+      "generic": "Abemaciclib",
+      "brand": "VERZENIO"
+    },
+    {
+      "text": "腫瘤科 Verzenio FC * tab 100 mg (Abemaciclib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少abemaciclib及其活性代 謝物之代謝，使增加abemaciclib血中濃度和副作用。 若需併用應調降abemaciclib劑量，建議於Paxlovid停用後3-5個半衰期 (一般約 19-40小時)，再將abemaciclib調增至一般建議劑量。",
+      "generic": "Abemaciclib",
+      "brand": "Verzenio"
+    },
+    {
+      "text": "腫瘤科 Zykadia # cap 150 mg (Ceritinib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少ceritinib代謝，使增加 ceritinib血中濃度和副作用。 儘量避免併用，若需併用建議ceritinib將劑量調降至1/3，完成Paxlovid療程後 ceritinib方可調增至原劑量。",
+      "generic": "Ceritinib",
+      "brand": "Zykadia"
+    },
+    {
+      "text": "腫瘤科 Sprycel FC * tab 20 mg (Dasatinib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少dasatinib代謝，使增加 dasatinib血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用應調降dasatinib劑量：每日服用70或100 mg者調降至 20 mg，每日服用140 mg者調降至40 mg，並應密切監測dasatinib副作用，仍 無法耐受者則應考慮停藥。Paxlovid完成療程至少1週後dasatinib方可調增至一",
+      "generic": "Dasatinib",
+      "brand": "Sprycel"
+    },
+    {
+      "text": "腫瘤科 Sprycel FC * tab 50 mg (Dasatinib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少dasatinib代謝，使增加 dasatinib血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用應調降dasatinib劑量：每日服用70或100 mg者調降至 20 mg，每日服用140 mg者調降至40 mg，並應密切監測dasatinib副作用，仍 無法耐受者則應考慮停藥。Paxlovid完成療程至少1週後dasatinib方可調增至一",
+      "generic": "Dasatinib",
+      "brand": "Sprycel"
+    },
+    {
+      "text": "腫瘤科 Imbruvica cap 140 mg (Ibrutinib) 重度 不明 尚可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少ibrutinib代謝，使 升高ibrutinib血中濃度及引發毒性反應。 儘量避免併用，使用Paxlovid期間建議暫時停用ibrutinib並密切監測其毒性反 應。",
+      "generic": "Ibrutinib",
+      "brand": "Imbruvica"
+    },
+    {
+      "text": "腫瘤科 Tibsovo tab 250 mg (Ivosidenib) 重度 不明 尚可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少ivosidenib代謝， 使升高ivosidenib血中濃度；併用時可能加成QT間隔延長。 儘量避免併用。若需併用應調降ivosidenib劑量為每日一次250 mg，並密切監測 心電圖變化，於Paxlovid停用至少5個半衰期 (一般約31-40小時) 後方可調增至原",
+      "generic": "Ivosidenib",
+      "brand": "Tibsovo"
+    },
+    {
+      "text": "腫瘤科 Nerlynx FC tab 40 mg (Neratinib) 重度 不明 尚可 Ritonavir抑制CYP3A4，與nirmatrelvir均會減少neratinib代謝， 使升高neratinib血中濃度及引發嚴重副作用。 儘量避免併用。Neratinib停用至少24小時後方能開始使用Paxlovid，應持續停用 neratinib直至Paxlovid結束治療後三天。",
+      "generic": "Neratinib",
+      "brand": "Nerlynx"
+    },
+    {
+      "text": "腫瘤科 Tasigna * cap 200 mg (Nilotinib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4和P-glycoprotein使升高 nilotinib血中濃度；nilotinib抑制CYP3A4減少ritonavir代謝使升高 ritonavir血中濃度及副作用。 儘量避免併用，若需併用應調降nilotinib劑量並密切監測心電圖變化。",
+      "generic": "Nilotinib",
+      "brand": "Tasigna"
+    },
+    {
+      "text": "腫瘤科 Tasigna * cap 150 mg (Nilotinib) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4和P-glycoprotein使升高 nilotinib血中濃度；nilotinib抑制CYP3A4減少ritonavir代謝使升高 ritonavir血中濃度及副作用。 儘量避免併用，若需併用應調降nilotinib劑量並密切監測心電圖變化。",
+      "generic": "Nilotinib",
+      "brand": "Tasigna"
+    },
+    {
+      "text": "腫瘤科 Xalkori cap 250 mg (Crizotinib) 重度 不明 尚可 Crizotinib和ritonavir均會抑制CYP3A，使升高二藥血中濃度及副 作用。併用時可能加成QT間隔延長，引發致命性心律不整。 儘量避免併用。若為ALK或ROS-1陽性之非小細胞肺癌，建議crizotinib調降劑量 至每日一次250 mg，並密切監測心電圖、電解質變化。",
+      "generic": "Crizotinib",
+      "brand": "Xalkori"
+    },
+    {
+      "text": "腫瘤科 Venclexta FC # tab 100 mg (Venetoclax) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4而減少venetoclax代謝，使增 加venetoclax血中濃度。 Venetoclax開始治療或劑量調整期間，若為慢性淋巴球性白血病者絕對禁止併 用。若為急性骨髓性白血病者併用Paxlovid期間須調降venetoclax劑量。 Venetoclax劑量調整期之後，併用Paxlovid期間每日維持劑量調降為100 mg。",
+      "generic": "Venetoclax",
+      "brand": "Venclexta"
+    },
+    {
+      "text": "腫瘤科 Afinitor * tab 5 mg (Everolimus) 重度 不明 尚可 Nirmatrelvir/ritonavir抑制CYP3A4及P-glycoprotein而減少 everolimus代謝與排除，使升高everolimus血中濃度而引發毒性副 作用。 儘量避免併用，若需併用時應密切監測everolimus血中濃度，必要時調整 everolimus劑量。 速度 文獻 佐證 機轉 / 臨床表現 建    議",
+      "generic": "Everolimus",
+      "brand": "Afinitor"
+    },
+    {
+      "text": "腫瘤科 Vinblastine DBL ##* inj 10mg/10ml (Vinblastine) 重度 緩慢 可 Ritonavir抑制CYP3A，與nirmatrelvir均會減少vinca alkaloids代 謝，使引發vinca alkaloids毒性作用。 儘量避免併用。若需併用應密切監測vinca alkaloids副作用如血液、腸胃及神經 毒性。",
+      "generic": "Vinblastine",
+      "brand": "Vinblastine"
+    },
+    {
+      "text": "腫瘤科 Vincristine sulphate ##* inj 1mg (Vincristine sulphate) 重度 不明 尚可 Ritonavir抑制CYP3A，與nirmatrelvir均會減少vinca alkaloids代 謝，使引發vinca alkaloids毒性作用。 儘量避免併用。若需併用應密切監測vinca alkaloids副作用如血液、腸胃及神經 毒性。",
+      "generic": "Vincristine sulphate",
+      "brand": "Vincristine"
+    },
+    {
+      "text": "腸胃科/Domperidone D.M.P. * tab 10 mg (Domperidone) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少domperidone代謝，引發致命性心律 不整；60歲以上或domperidone每日劑量大於30 mg者尤應留 併用時domperidone應由最低起始劑量開始給予，調增劑量時應謹慎觀察病人反 應，若出現頭暈、心悸、昏厥、癲癇等應立即停用domperidone。",
+      "generic": "Domperidone",
+      "brand": "D.M.P."
+    },
+    {
+      "text": "腸胃科/Domperidone Wempty * suspension 1 mg/ml 60 ml (Domperidone) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少domperidone代謝，引發致命性心律 不整；60歲以上或domperidone每日劑量大於30 mg者尤應留 併用時domperidone應由最低起始劑量開始給予，調增劑量時應謹慎觀察病人反 應，若出現頭暈、心悸、昏厥、癲癇等應立即停用domperidone。",
+      "generic": "Domperidone",
+      "brand": "Wempty"
+    },
+    {
+      "text": "腸胃科/Domperidone Wempty * suspension 1 mg/ml 60 ml, (Domperidone) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少domperidone代謝，引發致命性心律 不整；60歲以上或domperidone每日劑量大於30 mg者尤應留 併用時domperidone應由最低起始劑量開始給予，調增劑量時應謹慎觀察病人反 應，若出現頭暈、心悸、昏厥、癲癇等應立即停用domperidone。",
+      "generic": "Domperidone",
+      "brand": "Wempty"
+    },
+    {
+      "text": "腸胃科/Domperidone Domperid * suppository 10 mg (Domperidone) 重度 不明 尚可 Ritonavir抑制CYP3A4而減少domperidone代謝，引發致命性心律 不整；60歲以上或domperidone每日劑量大於30 mg者尤應留 併用時domperidone應由最低起始劑量開始給予，調增劑量時應謹慎觀察病人反 應，若出現頭暈、心悸、昏厥、癲癇等應立即停用domperidone。",
+      "generic": "Domperidone",
+      "brand": "Domperid"
+    },
+    {
+      "text": "腎臟科/Tolvaptan Jinarc * tab 30 mg (Tolvaptan) 絕對不可併用 不明 可 Ritonavir抑制CYP3A而減少tolvaptan代謝，使升高tolvaptan血中 濃度及副作用。 絕對不可併用。",
+      "generic": "Tolvaptan",
+      "brand": "Jinarc"
+    },
+    {
+      "text": "腎臟科/Tolvaptan Jinarc * tab 90 mg (Tolvaptan) 絕對不可併用 不明 可 Ritonavir抑制CYP3A而減少tolvaptan代謝，使升高tolvaptan血中 濃度及副作用。 絕對不可併用。",
+      "generic": "Tolvaptan",
+      "brand": "Jinarc"
+    },
+    {
+      "text": "腎臟科/Tolvaptan Jinarc * tab 90 mg/30 mg (56'S) (Tolvaptan) 絕對不可併用 不明 可 Ritonavir抑制CYP3A而減少tolvaptan代謝，使升高tolvaptan血中 濃度及副作用。 絕對不可併用。",
+      "generic": "56'S",
+      "brand": "Jinarc"
+    },
+    {
+      "text": "抗癲癇 Primidone (PRIMACLONE®) 強效CYP inducer，可能使Paxlovid失效。 建議停藥或使用替代藥物，考慮直接使用其他COVID-19抗病毒用藥。",
+      "generic": "Primidone",
+      "brand": "Primaclone"
+    },
+    {
+      "text": "抗血小板 Ticagrelor (BRILINTA®) 交互作用風險高。 建議停藥或使用替代藥物，並改用其他抗病毒藥物或停藥。",
+      "generic": "Ticagrelor",
+      "brand": "Brilinta"
+    },
+    {
+      "text": "泌尿/BPH Tadalafil (Cialis®) 交互作用風險高。 建議停藥或使用替代藥物。",
+      "generic": "Tadalafil",
+      "brand": "Cialis"
+    },
+    {
+      "text": "泌尿/BPH Vardenafil (Levitra®) 交互作用風險高。 建議停藥或使用替代藥物。",
+      "generic": "Vardenafil",
+      "brand": "Levitra"
+    },
+    {
+      "text": "偏頭痛 Eletriptan (Eletriptan®) 交互作用風險高。 建議停藥或使用替代藥物。",
+      "generic": "Eletriptan",
+      "brand": "Eletriptan"
+    },
+    {
+      "text": "抗微生物 Rifapentine (Priftin®) 強效CYP inducer，可能使Paxlovid失效。 建議停藥或使用替代藥物，考慮直接使用其他COVID-19抗病毒用藥。",
+      "generic": "Rifapentine",
+      "brand": "Priftin"
+    },
+    {
+      "text": "慢性腎臟病 Finerenone (Kerendia®) 交互作用風險高。 建議停藥或使用替代藥物。",
+      "generic": "Finerenone",
+      "brand": "Kerendia"
+    },
+    {
+      "text": "草藥 St. John’s Wort 強效CYP inducer，可能使Paxlovid失效。 建議停藥或使用替代藥物，考慮直接使用其他COVID-19抗病毒用藥。",
+      "generic": "St. John’s Wort",
+      "brand": "St. John’s Wort"
+    },
+    {
+      "text": "鎮靜安眠 Estazolam (EURODIN®) 建議調整劑量或加強監控不良反應，必要時減量或停藥。",
+      "generic": "Estazolam",
+      "brand": "Eurodin"
+    },
+    {
+      "text": "鎮靜安眠 Flurazepam (Dalmane®) 建議調整劑量或加強監控不良反應，必要時減量或停藥。",
+      "generic": "Flurazepam",
+      "brand": "Dalmane"
+    },
+    {
+      "text": "高血壓 Verapamil (ISOPTIN®) 監測低血壓症狀，若有症狀則減量或停藥。",
+      "generic": "Verapamil",
+      "brand": "Isoptin"
+    },
+    {
+      "text": "周邊動脈疾病 Cilostazol (PLETAAL®) 建議調整劑量或加強監控不良反應，監測臨床反應。",
+      "generic": "Cilostazol",
+      "brand": "Pletaal"
+    },
+    {
+      "text": "抗凝血劑 Edoxaban (Lixiana®) 目前尚無研究，應謹慎併用並監測出血風險。",
+      "generic": "Edoxaban",
+      "brand": "Lixiana"
+    },
+    {
+      "text": "抗凝血劑 Dabigatran (Pradaxa®) 腎功能正常患者不須減量或監測，應視情況監測。",
+      "generic": "Dabigatran",
+      "brand": "Pradaxa"
+    },
+    {
+      "text": "鎮靜安眠 Alprazolam (XANAX®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Alprazolam",
+      "brand": "Xanax"
+    },
+    {
+      "text": "鎮靜安眠 Zolpidem (Stilnox®) 建議調整劑量或加強監控不良反應，若有症狀則減量或停藥。",
+      "generic": "Zolpidem",
+      "brand": "Stilnox"
+    },
+    {
+      "text": "抗憂鬱 Buspirone (BUSPAR®) 建議調整劑量或加強監控不良反應，減量或監測。",
+      "generic": "Buspirone",
+      "brand": "Buspar"
+    },
+    {
+      "text": "精神病 Risperidone (RISPERDAL®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Risperidone",
+      "brand": "Risperdal"
+    },
+    {
+      "text": "精神病 Haloperidol (HALDOL®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Haloperidol",
+      "brand": "Haldol"
+    },
+    {
+      "text": "精神病 Aripiprazole (ABILIFY®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Aripiprazole",
+      "brand": "Abilify"
+    },
+    {
+      "text": "精神病 Brexpiprazole (Rexulti®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Brexpiprazole",
+      "brand": "Rexulti"
+    },
+    {
+      "text": "精神病 Clobazam (Frisium®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Clobazam",
+      "brand": "Frisium"
+    },
+    {
+      "text": "精神病 Hydroxyzine (Vistaril®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Hydroxyzine",
+      "brand": "Vistaril"
+    },
+    {
+      "text": "抗憂鬱 Mirtazapine (Remeron®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Mirtazapine",
+      "brand": "Remeron"
+    },
+    {
+      "text": "麻醉鎮痛 Methadone 密切監測是否有戒斷作用並調整劑量。",
+      "generic": "Methadone",
+      "brand": "Methadone"
+    },
+    {
+      "text": "麻醉鎮痛 Oxycodone (OxyContin®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Oxycodone",
+      "brand": "OxyContin"
+    },
+    {
+      "text": "麻醉鎮痛 Buprenorphine 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Buprenorphine",
+      "brand": "Buprenorphine"
+    },
+    {
+      "text": "麻醉鎮痛 Hydromorphone (Dilaudid®) 建議調整劑量或加強監控不良反應，減量並監測。",
+      "generic": "Hydromorphone",
+      "brand": "Dilaudid"
+    },
+    {
+      "text": "麻醉鎮痛 Morphine 無需減量，建議觀察臨床反應。",
+      "generic": "Morphine",
+      "brand": "Morphine"
+    },
+    {
+      "text": "麻醉鎮痛 Tramadol 無需減量，建議觀察臨床反應。",
+      "generic": "Tramadol",
+      "brand": "Tramadol"
+    },
+    {
+      "text": "高血壓 Lercanidipine (Zanidip®) 建議限制最大劑量，若有症狀則減量或停藥。",
+      "generic": "Lercanidipine",
+      "brand": "Zanidip"
+    },
+    {
+      "text": "抗心律不整 Mexiletine (Mexitil®) 無需調整劑量，若有症狀則停藥。",
+      "generic": "Mexiletine",
+      "brand": "Mexitil"
+    },
+    {
+      "text": "心衰竭 Sacubitril (Entresto® 成份之一) 建議調整劑量或加強監控不良反應，依據專科醫師建議。",
+      "generic": "Sacubitril",
+      "brand": "Sacubitril"
+    },
+    {
+      "text": "心衰竭 Valsartan (Entresto® 成份之一) 建議調整劑量或加強監控不良反應。",
+      "generic": "Valsartan",
+      "brand": "Valsartan"
+    },
+    {
+      "text": "前列腺肥大 Tamsulosin (HARNALIDGE®) 建議調整劑量或加強監控不良反應，或暫時停藥/減量。",
+      "generic": "Tamsulosin",
+      "brand": "Harnalidge"
+    },
+    {
+      "text": "前列腺肥大 Doxazosin (Cardura®) 建議調整劑量或加強監控不良反應。",
+      "generic": "Doxazosin",
+      "brand": "Cardura"
+    },
+    {
+      "text": "前列腺肥大 Terazosin (Hytrin®) 建議調整劑量或加強監控不良反應。",
+      "generic": "Terazosin",
+      "brand": "Hytrin"
+    },
+    {
+      "text": "CNS/BZDs Librium 樂平 (Chlordiazepoxide) 重度 緩慢 尚可 Ritonavir抑制Chlordiazepoxide代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Chlordiazepoxide",
+      "brand": "Librium 樂平"
+    },
+    {
+      "text": "CNS/BZDs Ativan 安定文 (Lorazepam) 重度 緩慢 尚可 Ritonavir抑制Lorazepam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Lorazepam",
+      "brand": "Ativan Anxicam Wempty Lowen 安定文"
+    },
+    {
+      "text": "CNS/BZDs Serax (Oxazepam) 重度 緩慢 尚可 Ritonavir抑制Oxazepam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Oxazepam",
+      "brand": "Serax"
+    },
+    {
+      "text": "CNS/BZDs Normison (Temazepam) 重度 緩慢 尚可 Ritonavir抑制Temazepam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Temazepam",
+      "brand": "Normison"
+    },
+    {
+      "text": "CNS/BZDs Lendormin 戀多眠 (Brotizolam) 重度 緩慢 尚可 Ritonavir抑制Brotizolam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Brotizolam",
+      "brand": "Lendormin Lendorm 戀多眠"
+    },
+    {
+      "text": "CNS/BZDs Lexotan 柔速瑞 (Bromazepam) 重度 緩慢 尚可 Ritonavir抑制Bromazepam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Bromazepam",
+      "brand": "Lexotan 柔速瑞 立舒保"
+    },
+    {
+      "text": "CNS/BZDs Modipanol FM2 氟硝西泮 (Flunitrazepam) 重度 緩慢 尚可 Ritonavir抑制Flunitrazepam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Flunitrazepam",
+      "brand": "Modipanol FM2 氟硝西泮"
+    },
+    {
+      "text": "CNS/BZDs Erispan 癒利舒盼 (Fludiazepam) 重度 緩慢 尚可 Ritonavir抑制Fludiazepam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Fludiazepam",
+      "brand": "Erispan 癒利舒盼"
+    },
+    {
+      "text": "CNS/BZDs Depas 戴帕斯 (Etizolam) 重度 緩慢 尚可 Ritonavir抑制Etizolam代謝，引發過度鎮靜或呼吸抑制等毒性副作用。 若需併用應觀察病人臨床反應，必要時調降benzodiazepines劑量。",
+      "generic": "Etizolam",
+      "brand": "Depas Etizolan 戴帕斯"
+    }
+  ],
+  "mg_avoided_drugs": [
+    {
+      "generic": "Alprazolam",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Alprazolam，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Atropine",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Atropine，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Biperiden",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Biperiden，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Bromazepam",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Bromazepam，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Buprenorphine",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Buprenorphine，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Ciprofloxacin",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Ciprofloxacin，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Diazepam",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Diazepam，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Dicycloverine",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Dicycloverine，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Disopyramide",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Disopyramide，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Eperisone",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Eperisone，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Glycopyrronium Bromide",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Glycopyrronium Bromide，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Hyoscine",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Hyoscine，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Levomepromazine",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Levomepromazine，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Lomefloxacin",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Lomefloxacin，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Midazolam",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Midazolam，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Minocycline",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Minocycline，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Moxifloxacin",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Moxifloxacin，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Norfloxacin",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Norfloxacin，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Ofloxacin",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Ofloxacin，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Orphenadrine",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Orphenadrine，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Oxybutynin",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Oxybutynin，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Zolpidem",
+      "brand": "",
+      "text": "【禁用 Contraindicated】 建議避免在重症肌無力患者中使用 Zolpidem，可能會顯著惡化症狀。"
+    },
+    {
+      "generic": "Amikacin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Amikacin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Amitriptyline",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Amitriptyline 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Atenolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Atenolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Atracurium",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Atracurium 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Azithromycin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Azithromycin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Betamethasone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Betamethasone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Betaxolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Betaxolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Bisoprolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Bisoprolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Budesonide",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Budesonide 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Carbamazepine",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Carbamazepine 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Carvedilol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Carvedilol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Hydrocortisone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Hydrocortisone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Hydroxychloroquine",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Hydroxychloroquine 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Labetalol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Labetalol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Lithium",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Lithium 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Magnesium Hydroxide",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Magnesium Hydroxide 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Magnesium Oxide",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Magnesium Oxide 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Magnesium Sulfate",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Magnesium Sulfate 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Methylprednisolone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Methylprednisolone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Metoprolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Metoprolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Nebivolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Nebivolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Neomycin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Neomycin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Chlorpromazine",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Chlorpromazine 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Cisplatin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Cisplatin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Clarithromycin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Clarithromycin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Dexamethasone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Dexamethasone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Erythromycin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Erythromycin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Esmolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Esmolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Fludrocortisone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Fludrocortisone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Gabapentin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Gabapentin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Gentamicin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Gentamicin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Haloperidol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Haloperidol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Oxytetracycline",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Oxytetracycline 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Phenytoin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Phenytoin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Pizotifen",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Pizotifen 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Prednisolone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Prednisolone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Propranolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Propranolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Streptomycin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Streptomycin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Succinylcholine",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Succinylcholine 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Timolol",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Timolol 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Tobramycin",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Tobramycin 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Triamcinolone",
+      "brand": "",
+      "text": "【極度謹慎 Use with Extreme Caution】 藥物 Triamcinolone 可能會惡化重症肌無力的症狀。"
+    },
+    {
+      "generic": "Adalimumab",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Adalimumab 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Amiodarone",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Amiodarone 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Amphotericin B",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Amphotericin B 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Aripiprazole",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Aripiprazole 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Atezolizumab",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Atezolizumab 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Atorvastatin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Atorvastatin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Azacitidine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Azacitidine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Bevacizumab",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Bevacizumab 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Bicalutamide",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Bicalutamide 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Bilastine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Bilastine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Capecitabine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Capecitabine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Captopril",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Captopril 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Cefoxitin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Cefoxitin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Cetirizine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Cetirizine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Clomipramine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Clomipramine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Clonazepam",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Clonazepam 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Colchicine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Colchicine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Dantrolene",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Dantrolene 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Daptomycin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Daptomycin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Diphtheria and Tetanus Vaccines",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Diphtheria and Tetanus Vaccines 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Doxazosin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Doxazosin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Eribulin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Eribulin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Escitalopram",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Escitalopram 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Everolimus",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Everolimus 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Febuxostat",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Febuxostat 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Fenoterol",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Fenoterol 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Fentanyl",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Fentanyl 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Fluvoxamine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Fluvoxamine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Ganciclovir",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Ganciclovir 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Gemfibrozil",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Gemfibrozil 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Hepatitis B Vaccine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Hepatitis B Vaccine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Indometacin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Indometacin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Ipratropium",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Ipratropium 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Salbutamol",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Salbutamol 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Isosorbide Mononitrate",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Isosorbide Mononitrate 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Lamivudine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Lamivudine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Lamotrigine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Lamotrigine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Lansoprazole",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Lansoprazole 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Levetiracetam",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Levetiracetam 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Levobupivacaine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Levobupivacaine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Levofloxacin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Levofloxacin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Levothyroxine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Levothyroxine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Losartan",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Losartan 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Mirtazapine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Mirtazapine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Naproxen",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Naproxen 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Nicotinic Acid",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Nicotinic Acid 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Nilotinib",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Nilotinib 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Oxcarbazepine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Oxcarbazepine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Paroxetine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Paroxetine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Pembrolizumab",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Pembrolizumab 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Pilocarpine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Pilocarpine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Pramipexole",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Pramipexole 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Pravastatin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Pravastatin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Pregabalin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Pregabalin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Rasagiline",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Rasagiline 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Rifampicin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Rifampicin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Risperidone",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Risperidone 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Rocuronium",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Rocuronium 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Roflumilast",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Roflumilast 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Rupatadine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Rupatadine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Selegiline",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Selegiline 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Sildenafil",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Sildenafil 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Solifenacin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Solifenacin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Tenofovir",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Tenofovir 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Terazosin",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Terazosin 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Tremelimumab",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Tremelimumab 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Valproic Acid",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Valproic Acid 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Verapamil",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Verapamil 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Vincristine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Vincristine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Vinorelbine",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Vinorelbine 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Esomeprazole",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Esomeprazole 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Omeprazole",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Omeprazole 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Voriconazole",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Voriconazole 可能會引發重症肌無力不良反應 (ADR)。"
+    },
+    {
+      "generic": "Zonisamide",
+      "brand": "",
+      "text": "【謹慎使用 Use with Caution】 據報導藥物 Zonisamide 可能會引發重症肌無力不良反應 (ADR)。"
+    }
+  ]
+}

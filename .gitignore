@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+dist/
+
+# Rust build outputs
+target/
+src-tauri/target/
+launcher/target/
+
+# Executables
+*.exe
+
+# IDE / system files
+.DS_Store
+Thumbs.db
+.gemini/
+.agents/
+.vscode/
+.idea/

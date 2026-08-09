@@ -1,0 +1,9 @@
+[package]
+name = "paxlovid-launcher"
+version = "1.0.0"
+edition = "2021"
+description = "Paxlovid Standalone Launcher - embeds main EXE and WebView2Loader.dll"
+
+[[bin]]
+name = "Paxlovid"
+path = "src/main.rs"
