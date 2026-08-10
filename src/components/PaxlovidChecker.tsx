@@ -359,7 +359,7 @@ export const PaxlovidChecker: React.FC = () => {
         const metaInfo = (item.visitDate || item.source)
           ? `<div style="font-size: 8pt; color: #64748b; margin-top: 4px; display: flex; gap: 10px;">
                ${item.visitDate ? `<span>📅 就醫日期：${item.visitDate}</span>` : ""}
-               ${item.source ? `<span>🏥 來源：${item.source}</span>` : ""}
+               ${item.source ? `<span>🏥 來源：${item.source}${item.visitType ? ` (${item.visitType})` : ""}</span>` : ""}
              </div>`
           : "";
 
@@ -409,7 +409,7 @@ export const PaxlovidChecker: React.FC = () => {
           const metaInfo = (item.visitDate || item.source)
             ? `<div style="font-size: 8pt; color: #64748b; margin-top: 4px; display: flex; gap: 10px;">
                  ${item.visitDate ? `<span>📅 就醫日期：${item.visitDate}</span>` : ""}
-                 ${item.source ? `<span>🏥 來源：${item.source}</span>` : ""}
+                 ${item.source ? `<span>🏥 來源：${item.source}${item.visitType ? ` (${item.visitType})` : ""}</span>` : ""}
                </div>`
             : "";
 
@@ -1056,7 +1056,7 @@ export const PaxlovidChecker: React.FC = () => {
                           {(item.visitDate || item.source) && (
                             <div style={{ display: "flex", gap: "12px", fontSize: "11px", color: tokens.colorNeutralForeground3 || "#888", marginTop: "2px" }}>
                               {item.visitDate && <span>📅 就醫日期：{item.visitDate}</span>}
-                              {item.source && <span>🏥 來源：{item.source}</span>}
+                              {item.source && <span>🏥 來源：{item.source}{item.visitType ? ` (${item.visitType})` : ""}</span>}
                             </div>
                           )}
                         </div>
@@ -1114,7 +1114,7 @@ export const PaxlovidChecker: React.FC = () => {
                           {(item.visitDate || item.source) && (
                             <div style={{ display: "flex", gap: "12px", fontSize: "11px", color: tokens.colorNeutralForeground3 || "#888", marginTop: "2px" }}>
                               {item.visitDate && <span>📅 就醫日期：{item.visitDate}</span>}
-                              {item.source && <span>🏥 來源：{item.source}</span>}
+                              {item.source && <span>🏥 來源：{item.source}{item.visitType ? ` (${item.visitType})` : ""}</span>}
                             </div>
                           )}
                         </div>

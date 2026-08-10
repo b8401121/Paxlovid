@@ -240,6 +240,7 @@ export interface ParsedLineItem {
   visitDate?: string;
   dateKey?: string;
   source?: string;
+  visitType?: string;
 }
 
 export interface CategorizedResults {
@@ -358,6 +359,26 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
   const codeRe = /^[A-Za-z]{1,3}\d{5,10}[A-Za-z0-9]{0,3}(?:（[^）]+）|\([^)]+\))?$/;
   const dateRe = /^\d{2,4}[/\.-]\d{1,2}[/\.-]\d{1,2}/;
 
+  // ── 來源與就醫類別預掃描（從 PaxlovidWeb 移植） ──────────────────────────────────
+  // 健保雲端藥歷每筆藥記錄為 4 行一組：
+  //   A: {序號}\t{院所名稱}
+  //   B: {門診|住診|藥局}
+  //   C: {院所代碼}\t{主診斷}
+  //   D: {ATC3}\t...\t{藥品代碼}\t{藥品名稱}\t{就醫日期}\t...
+  // 我們透過往前搜尋最近的 A / B 行來判定來源院所與就醫類別
+  const itemLineRe = /^(\d{1,3})\t(.+)/;
+  const visitTypeRe = /^(門診|住診|藥局)$/;
+  const sourceMap: { source: string; visitType: string }[] = [];
+  let lastSource = '';
+  let lastVisitType = '';
+  for (let i = 0; i < blocks.length; i++) {
+    const b = blocks[i].trim();
+    const m = b.match(itemLineRe);
+    if (m) { lastSource = m[2].trim(); }
+    if (visitTypeRe.test(b)) { lastVisitType = b.trim(); }
+    sourceMap[i] = { source: lastSource, visitType: lastVisitType };
+  }
+
   const tempItems: (ParsedLineItem & { drugKey: string })[] = [];
 
   for (let idx = 0; idx < blocks.length; idx++) {
@@ -416,19 +437,25 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
     }
 
     // 3. Identify source (Hospital/Clinic name)
-    // Scan all columns for hospital/clinic keywords first (highest priority)
-    const hospitalKeywords = ["醫院", "診所", "衛生所", "分院", "醫學中心", "長庚", "馬偕", "慈濟", "國泰", "新光", "台大", "臺大", "榮總", "三總", "附醫", "附設", "中心"];
-    for (const c of cols) {
-      const isGenericService = (c.includes("門診") || c.includes("急診") || c.includes("住院")) && !c.includes("診所") && !c.includes("醫院");
-      if (c && !isGenericService) {
-        if (hospitalKeywords.some(kw => c.includes(kw))) {
-          source = c;
-          break;
+    const srcInfo = sourceMap[idx] || { source: '', visitType: '' };
+    source = srcInfo.source;
+    let visitType = srcInfo.visitType;
+
+    // Fallback: If pre-scan source is empty, scan columns for hospital keywords
+    if (!source) {
+      const hospitalKeywords = ["醫院", "診所", "衛生所", "分院", "醫學中心", "長庚", "馬偕", "慈濟", "國泰", "新光", "台大", "臺大", "榮總", "三總", "附醫", "附設", "中心"];
+      for (const c of cols) {
+        const isGenericService = (c.includes("門診") || c.includes("急診") || c.includes("住院")) && !c.includes("診所") && !c.includes("醫院");
+        if (c && !isGenericService) {
+          if (hospitalKeywords.some(kw => c.includes(kw))) {
+            source = c;
+            break;
+          }
         }
       }
     }
 
-    // Fallback: If no hospital keyword matched, get index 1 if it's not a service type/date/code
+    // Fallback: If still empty, get index 1 if it's not a service type/date/code
     if (!source && cols.length > 1) {
       const val = cols[1];
       const isDate = dateRe.test(val);
@@ -543,7 +570,8 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
       visitDate: visitDate || undefined,
       dateKey,
       drugKey,
-      source: source || undefined
+      source: source || undefined,
+      visitType: visitType || undefined
     });
   }
 
