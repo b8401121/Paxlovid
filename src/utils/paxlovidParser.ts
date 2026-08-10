@@ -380,39 +380,11 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
     let visitDate = "";
     let source = "";
 
-    // 1. If it's a standard complete copy-paste (codeIdx is 6 and length >= 9)
-    if (codeIdx === 6 && cols.length >= 9) {
-      source = cols[1];
+    // 1. Identify visitDate
+    if (codeIdx === 6 && cols.length >= 9 && dateRe.test(cols[8])) {
       visitDate = cols[8];
-      genericName = cols[5];
-      brandName = cols[7];
     } else {
-      // Fallback: look left/right of codeIdx
-      if (hasCode) {
-        for (let i = codeIdx - 1; i >= 0; i--) {
-          if (cols[i]) {
-            genericName = cols[i];
-            break;
-          }
-        }
-        for (let i = codeIdx + 1; i < cols.length; i++) {
-          if (cols[i]) {
-            brandName = cols[i];
-            break;
-          }
-        }
-      }
-
       // Fallback date scan
-      const targetIdx = cols.indexOf(genericName || brandName || "");
-      if (targetIdx !== -1) {
-        for (let j = targetIdx + 1; j < cols.length; j++) {
-          if (dateRe.test(cols[j])) {
-            visitDate = cols[j];
-            break;
-          }
-        }
-      }
       if (!visitDate) {
         for (const c of cols) {
           if (dateRe.test(c)) {
@@ -421,13 +393,51 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
           }
         }
       }
+    }
 
-      // Fallback source scan
-      for (const c of cols) {
-        if (c && (c.includes("門診") || c.includes("急診") || c.includes("住院") || c.includes("牙醫") || c.includes("西醫") || c.includes("中醫") || c.includes("診所"))) {
+    // 2. Identify genericName and brandName
+    if (codeIdx === 6 && cols.length >= 9) {
+      genericName = cols[5];
+      brandName = cols[7];
+    } else if (hasCode) {
+      // Fallback: look left/right of codeIdx
+      for (let i = codeIdx - 1; i >= 0; i--) {
+        if (cols[i]) {
+          genericName = cols[i];
+          break;
+        }
+      }
+      for (let i = codeIdx + 1; i < cols.length; i++) {
+        if (cols[i]) {
+          brandName = cols[i];
+          break;
+        }
+      }
+    }
+
+    // 3. Identify source (Hospital/Clinic name)
+    // Scan all columns for hospital/clinic keywords first (highest priority)
+    const hospitalKeywords = ["醫院", "診所", "衛生所", "分院", "醫學中心", "長庚", "馬偕", "慈濟", "國泰", "新光", "台大", "臺大", "榮總", "三總", "附醫", "附設", "中心"];
+    for (const c of cols) {
+      const isGenericService = (c.includes("門診") || c.includes("急診") || c.includes("住院")) && !c.includes("診所") && !c.includes("醫院");
+      if (c && !isGenericService) {
+        if (hospitalKeywords.some(kw => c.includes(kw))) {
           source = c;
           break;
         }
+      }
+    }
+
+    // Fallback: If no hospital keyword matched, get index 1 if it's not a service type/date/code
+    if (!source && cols.length > 1) {
+      const val = cols[1];
+      const isDate = dateRe.test(val);
+      const isCode = codeRe.test(val);
+      const isGenericOrBrand = val.toLowerCase() === genericName.toLowerCase() || val.toLowerCase() === brandName.toLowerCase();
+      const isServiceType = val.includes("門診") || val.includes("急診") || val.includes("住院");
+      
+      if (val && !isDate && !isCode && !isGenericOrBrand && !isServiceType) {
+        source = val;
       }
     }
 
