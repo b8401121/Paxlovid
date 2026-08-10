@@ -239,6 +239,7 @@ export interface ParsedLineItem {
   isDuplicate?: boolean;
   visitDate?: string;
   dateKey?: string;
+  source?: string;
 }
 
 export interface CategorizedResults {
@@ -376,38 +377,55 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
 
     let genericName = "";
     let brandName = "";
-    if (hasCode) {
-      // Look left for first non-empty column (generic name)
-      for (let i = codeIdx - 1; i >= 0; i--) {
-        if (cols[i]) {
-          genericName = cols[i];
-          break;
-        }
-      }
-      // Look right for first non-empty column (brand name)
-      for (let i = codeIdx + 1; i < cols.length; i++) {
-        if (cols[i]) {
-          brandName = cols[i];
-          break;
-        }
-      }
-    }
-
-    // Unified Date Scanner for this block
     let visitDate = "";
-    const targetIdx = cols.indexOf(genericName || brandName || "");
-    if (targetIdx !== -1) {
-      for (let j = targetIdx + 1; j < cols.length; j++) {
-        if (dateRe.test(cols[j])) {
-          visitDate = cols[j];
-          break;
+    let source = "";
+
+    // 1. If it's a standard complete copy-paste (codeIdx is 6 and length >= 9)
+    if (codeIdx === 6 && cols.length >= 9) {
+      source = cols[1];
+      visitDate = cols[8];
+      genericName = cols[5];
+      brandName = cols[7];
+    } else {
+      // Fallback: look left/right of codeIdx
+      if (hasCode) {
+        for (let i = codeIdx - 1; i >= 0; i--) {
+          if (cols[i]) {
+            genericName = cols[i];
+            break;
+          }
+        }
+        for (let i = codeIdx + 1; i < cols.length; i++) {
+          if (cols[i]) {
+            brandName = cols[i];
+            break;
+          }
         }
       }
-    }
-    if (!visitDate) {
+
+      // Fallback date scan
+      const targetIdx = cols.indexOf(genericName || brandName || "");
+      if (targetIdx !== -1) {
+        for (let j = targetIdx + 1; j < cols.length; j++) {
+          if (dateRe.test(cols[j])) {
+            visitDate = cols[j];
+            break;
+          }
+        }
+      }
+      if (!visitDate) {
+        for (const c of cols) {
+          if (dateRe.test(c)) {
+            visitDate = c;
+            break;
+          }
+        }
+      }
+
+      // Fallback source scan
       for (const c of cols) {
-        if (dateRe.test(c)) {
-          visitDate = c;
+        if (c && (c.includes("門診") || c.includes("急診") || c.includes("住院") || c.includes("牙醫") || c.includes("西醫") || c.includes("中醫") || c.includes("診所"))) {
+          source = c;
           break;
         }
       }
@@ -512,9 +530,10 @@ export function parseAndCategorizeCloudPrescription(rawText: string): CloudPresc
       genericName: genericName || undefined,
       brandName: brandName || undefined,
       hasCode,
-      visitDate,
+      visitDate: visitDate || undefined,
       dateKey,
-      drugKey
+      drugKey,
+      source: source || undefined
     });
   }
 

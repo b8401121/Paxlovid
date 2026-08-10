@@ -356,12 +356,19 @@ export const PaxlovidChecker: React.FC = () => {
         const subDetails = (detail.code || detail.name) && detail.usage
           ? `<div style="font-size: 8.5pt; color: #475569; margin-top: 2px;">學名：${detail.code || "-"} / 代碼：${detail.name || "-"}</div>`
           : "";
+        const metaInfo = (item.visitDate || item.source)
+          ? `<div style="font-size: 8pt; color: #64748b; margin-top: 4px; display: flex; gap: 10px;">
+               ${item.visitDate ? `<span>📅 就醫日期：${item.visitDate}</span>` : ""}
+               ${item.source ? `<span>🏥 來源：${item.source}</span>` : ""}
+             </div>`
+          : "";
 
         return `
           <tr>
             <td>
               <div style="font-weight: bold; color: #0f172a;">${displayName}</div>
               ${subDetails}
+              ${metaInfo}
             </td>
             <td>
               <div class="suggestion-text">${icon} ${detail.suggestion}</div>
@@ -399,12 +406,19 @@ export const PaxlovidChecker: React.FC = () => {
           const subDetails = (detail.code || detail.name) && detail.usage
             ? `<div style="font-size: 8.5pt; color: #475569; margin-top: 2px;">學名：${detail.code || "-"} / 代碼：${detail.name || "-"}</div>`
             : "";
+          const metaInfo = (item.visitDate || item.source)
+            ? `<div style="font-size: 8pt; color: #64748b; margin-top: 4px; display: flex; gap: 10px;">
+                 ${item.visitDate ? `<span>📅 就醫日期：${item.visitDate}</span>` : ""}
+                 ${item.source ? `<span>🏥 來源：${item.source}</span>` : ""}
+               </div>`
+            : "";
 
           return `
             <tr>
               <td>
                 <div style="font-weight: bold; color: #0f172a;">${displayName}</div>
                 ${subDetails}
+                ${metaInfo}
               </td>
               <td>
                 <div style="color: #475569; font-weight: bold;">❓ 尚未比對到交互作用資料</div>
@@ -1035,9 +1049,17 @@ export const PaxlovidChecker: React.FC = () => {
                         </div>
                       }
                       description={
-                        <Text size={200} style={{ color: tokens.colorNeutralForeground4, wordBreak: "break-all" }}>
-                          {item.cleanLineScreen}
-                        </Text>
+                        <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                          <Text size={200} style={{ color: tokens.colorNeutralForeground4, wordBreak: "break-all" }}>
+                            {item.cleanLineScreen}
+                          </Text>
+                          {(item.visitDate || item.source) && (
+                            <div style={{ display: "flex", gap: "12px", fontSize: "11px", color: tokens.colorNeutralForeground3 || "#888", marginTop: "2px" }}>
+                              {item.visitDate && <span>📅 就醫日期：{item.visitDate}</span>}
+                              {item.source && <span>🏥 來源：{item.source}</span>}
+                            </div>
+                          )}
+                        </div>
                       }
                     />
                   </Card>
@@ -1085,9 +1107,17 @@ export const PaxlovidChecker: React.FC = () => {
                         </div>
                       }
                       description={
-                        <Text size={200} style={{ color: tokens.colorNeutralForeground4, wordBreak: "break-all" }}>
-                          {item.cleanLineScreen}
-                        </Text>
+                        <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                          <Text size={200} style={{ color: tokens.colorNeutralForeground4, wordBreak: "break-all" }}>
+                            {item.cleanLineScreen}
+                          </Text>
+                          {(item.visitDate || item.source) && (
+                            <div style={{ display: "flex", gap: "12px", fontSize: "11px", color: tokens.colorNeutralForeground3 || "#888", marginTop: "2px" }}>
+                              {item.visitDate && <span>📅 就醫日期：{item.visitDate}</span>}
+                              {item.source && <span>🏥 來源：{item.source}</span>}
+                            </div>
+                          )}
+                        </div>
                       }
                     />
                   </Card>
